@@ -8,7 +8,7 @@ barba.use(barbaCss)
 //   window.scrollTo(0, 0)
 // })
 
-barba.hooks.afterLeave(() => {
+barba.hooks.enter(() => {
   window.scrollTo(0, 0)
 })
 
@@ -17,35 +17,16 @@ barba.init({
   transitions: [
     {
       name: 'home',
-      sync: true,
       once() {},
-      leave() {},
-      enter() {},
-    },
-    {
-      name: 'fade',
-      to: {
-        namespace: ['fade'],
-      },
-      leave() {},
-      enter() {},
-    },
-    {
-      name: 'clip',
-      sync: true,
-      to: {
-        namespace: ['clip'],
-      },
       leave() {},
       enter() {},
     },
     {
       name: 'cover',
       to: {
-        namespace: ['home', 'about', 'work', 'skills'],
+        namespace: ['home', 'about', 'work', 'skills', 'detail'],
       },
       leave() {},
-      afterLeave() {},
       enter() {},
     },
   ],
