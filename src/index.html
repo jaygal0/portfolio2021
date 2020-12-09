@@ -13,103 +13,106 @@
     <script defer src="/assets/app.js"></script>
     <title>Joshua Galinato's Portfolio</title>
   </head>
-  <body class="container">
-    <header>
-      <nav class="nav">
-        <a href="/index.html"><img src="" alt="" class="nav__logo" /></a>
-        <div class="nav__navbar">
-          <ul class="nav__unordered">
-            <li class="nav__listitems">
-              <a class="nav__link" href="/about.html">about</a>
+  <body data-barba="wrapper">
+    <div data-barba="container" data-barba-namespace="home" class="container">
+      <div class="transition">hello</div>
+      <header>
+        <nav class="nav">
+          <a href="/index.html"><img src="" alt="" class="nav__logo" /></a>
+          <div class="nav__navbar">
+            <ul class="nav__unordered">
+              <li class="nav__listitems">
+                <a class="nav__link" href="/about.html">about</a>
+              </li>
+              <li class="nav__listitems">
+                <a class="nav__link" href="/work.html">work</a>
+              </li>
+              <li class="nav__listitems">
+                <a class="nav__link" href="/skills.html">skills</a>
+              </li>
+              <li class="nav__listitems">
+                <a class="nav__link" href="#">contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <main class="main__home">
+        <section class="homehero">
+          <div class="homehero__titles">
+            <h3 class="homehero__titles--h3">joshua galinato</h3>
+            <h1 class="homehero__titles--h1">this should be animating</h1>
+          </div>
+        </section>
+
+        <section class="homecards">
+          <h2 class="homecards__title">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam
+            ullam officiis dolor!
+          </h2>
+          <div class="cardContainer">
+            <a href="/skills.html" class="homecards__first widecard">
+              <div class="widecard--title">
+                <h4 class="widecard--h4">Lorem ipsum.</h4>
+                <h2 class="widecard--h2">title</h2>
+              </div>
+              <p class="widecard--text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Incidunt praesentium rerum nihil accusamus aliquid expedita
+                neque mollitia vel hic perferendis.
+              </p>
+            </a>
+          </div>
+          <div class="cardContainer">
+            <a href="/work.html" class="homecards__second singleCard">
+              <div class="singleCard--title">
+                <h4 class="singleCard--h4">Lorem ipsum.</h4>
+                <h2 class="singleCard--h2">title</h2>
+              </div>
+              <p class="singleCard--text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Incidunt praesentium rerum nihil accusamus aliquid expedita
+                neque mollitia vel hic perferendis.
+              </p>
+            </a>
+            <a href="/about.html" class="homecards__third singleCard">
+              <div class="singleCard--title">
+                <h4 class="singleCard--h4">Lorem ipsum.</h4>
+                <h2 class="singleCard--h2">title</h2>
+              </div>
+              <p class="singleCard--text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Incidunt praesentium rerum nihil accusamus aliquid expedita
+                neque mollitia vel hic perferendis.
+              </p>
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <img src="" alt="" class="footer__logo" />
+        <div class="footer__nav">
+          <ul class="footer__unordered">
+            <li class="footer__listitems">
+              <a class="footer__link" href="#">about</a>
             </li>
-            <li class="nav__listitems">
-              <a class="nav__link" href="/work.html">work</a>
+            <li class="footer__listitems">
+              <a class="footer__link" href="#">work</a>
             </li>
-            <li class="nav__listitems">
-              <a class="nav__link" href="/skills.html">skills</a>
+            <li class="footer__listitems">
+              <a class="footer__link" href="#">skills</a>
             </li>
-            <li class="nav__listitems">
-              <a class="nav__link" href="#">contact</a>
+            <li class="footer__listitems">
+              <a class="footer__link" href="#">contact</a>
             </li>
           </ul>
         </div>
-      </nav>
-    </header>
-    <main class="main__home">
-      <section class="homehero">
-        <div class="homehero__titles">
-          <h3 class="homehero__titles--h3">joshua galinato</h3>
-          <h1 class="homehero__titles--h1">this should be animating</h1>
+        <div class="footer__copyright">
+          <p class="footer__copyright--text">site made with ❤️</p>
+          <p class="footer__copyright--text">joshua galinato &#169; 2020</p>
         </div>
-      </section>
-
-      <section class="homecards">
-        <h2 class="homecards__title">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam
-          ullam officiis dolor!
-        </h2>
-        <div class="cardContainer">
-          <a href="/skills.html" class="homecards__first widecard">
-            <div class="widecard--title">
-              <h4 class="widecard--h4">Lorem ipsum.</h4>
-              <h2 class="widecard--h2">title</h2>
-            </div>
-            <p class="widecard--text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-              praesentium rerum nihil accusamus aliquid expedita neque mollitia
-              vel hic perferendis.
-            </p>
-          </a>
-        </div>
-        <div class="cardContainer">
-          <a href="/work.html" class="homecards__second singleCard">
-            <div class="singleCard--title">
-              <h4 class="singleCard--h4">Lorem ipsum.</h4>
-              <h2 class="singleCard--h2">title</h2>
-            </div>
-            <p class="singleCard--text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-              praesentium rerum nihil accusamus aliquid expedita neque mollitia
-              vel hic perferendis.
-            </p>
-          </a>
-          <a href="/about.html" class="homecards__third singleCard">
-            <div class="singleCard--title">
-              <h4 class="singleCard--h4">Lorem ipsum.</h4>
-              <h2 class="singleCard--h2">title</h2>
-            </div>
-            <p class="singleCard--text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-              praesentium rerum nihil accusamus aliquid expedita neque mollitia
-              vel hic perferendis.
-            </p>
-          </a>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <img src="" alt="" class="footer__logo" />
-      <div class="footer__nav">
-        <ul class="footer__unordered">
-          <li class="footer__listitems">
-            <a class="footer__link" href="#">about</a>
-          </li>
-          <li class="footer__listitems">
-            <a class="footer__link" href="#">work</a>
-          </li>
-          <li class="footer__listitems">
-            <a class="footer__link" href="#">skills</a>
-          </li>
-          <li class="footer__listitems">
-            <a class="footer__link" href="#">contact</a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__copyright">
-        <p class="footer__copyright--text">site made with ❤️</p>
-        <p class="footer__copyright--text">joshua galinato &#169; 2020</p>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
