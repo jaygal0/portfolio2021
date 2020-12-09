@@ -1,5 +1,5 @@
 @mixin transition {
-  transition: all ease-out 0.3s;
+  transition: scale ease-out 0.2;
 }
 
 @mixin cardHover {

@@ -41,10 +41,6 @@
     &:hover {
       @include cardHover;
     }
-
-    &:active {
-      @include cardActive;
-    }
   }
 
   &__second {
@@ -56,10 +52,6 @@
     &:hover {
       @include cardHover;
     }
-
-    &:active {
-      @include cardActive;
-    }
   }
 
   &__third {
@@ -70,10 +62,6 @@
 
     &:hover {
       @include cardHover;
-    }
-
-    &:active {
-      @include cardActive;
     }
   }
 }

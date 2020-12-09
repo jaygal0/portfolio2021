@@ -4,10 +4,11 @@ import barbaCss from '@barba/css'
 // tell Barba to use the css plugin
 barba.use(barbaCss)
 
-barba.hooks.before(() => {
-  window.scrollTo(0, 0)
-})
-barba.hooks.enter(() => {
+// barba.hooks.before(() => {
+//   window.scrollTo(0, 0)
+// })
+
+barba.hooks.afterLeave(() => {
   window.scrollTo(0, 0)
 })
 
@@ -44,6 +45,7 @@ barba.init({
         namespace: ['home', 'about', 'work', 'skills'],
       },
       leave() {},
+      afterLeave() {},
       enter() {},
     },
   ],

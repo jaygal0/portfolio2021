@@ -64,13 +64,13 @@
 
   &__third {
     background-image: url('/img/card.jpg');
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: cover;
   }
 
   &__fourth {
     background-image: url('/img/card.jpg');
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: cover;
     @include marginBottom;
   }
