@@ -1,0 +1,52 @@
+.main__about {
+  grid-column: 1 / -1;
+  grid-row: 1;
+  display: grid;
+  grid-template-columns: minmax(150px, 1fr) repeat(6, 1fr) minmax(150px, 1fr);
+  background: $grey;
+}
+
+.abouthero {
+  grid-column: 1 / -1;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(150px, 1fr) repeat(6, 1fr) minmax(150px, 1fr);
+  position: relative;
+  background-image: url('/img/about.jpg');
+  @include backgroundImage;
+
+  &__titles {
+    grid-column: 3;
+    position: absolute;
+    bottom: 15rem;
+    color: white;
+
+    &--h3 {
+      opacity: 0.5;
+    }
+  }
+}
+
+.aboutcards {
+  grid-column: 3 / 7;
+  margin-top: 8rem;
+
+  &__first {
+    background: $blue;
+  }
+
+  &__second {
+    background: $green;
+  }
+
+  &__third {
+    background-image: url('/img/card.jpg');
+    @include backgroundImage;
+  }
+
+  &__fourth {
+    background-image: url('/img/card.jpg');
+    @include backgroundImage;
+    @include marginBottom;
+  }
+}

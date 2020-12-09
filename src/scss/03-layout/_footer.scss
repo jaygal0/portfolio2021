@@ -1,0 +1,54 @@
+footer {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-row: 2;
+  grid-template-columns: minmax(150px, 1fr) repeat(6, 1fr) minmax(150px, 1fr);
+  background: $black;
+}
+
+.footer {
+  &__logo {
+    grid-column: 2 / span 1;
+    width: 45px;
+    height: 45px;
+    background: white;
+    border-radius: 50rem;
+    padding: 5px;
+    margin: 0 auto;
+    margin-top: 9rem;
+  }
+
+  &__nav {
+    grid-column: 3 / span 1;
+    margin: 0 auto;
+    margin-top: 5rem;
+  }
+
+  &__unordered {
+  }
+
+  &__listitems {
+    list-style: none;
+    text-transform: capitalize;
+    margin: 2rem;
+    color: white;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: white;
+  }
+
+  &__copyright {
+    grid-column: 6 / span 1;
+    margin: 0 auto;
+    margin-top: 9rem;
+
+    &--text {
+      font-size: 1.5rem;
+      margin: 2rem 0;
+      text-transform: capitalize;
+      color: white;
+    }
+  }
+}

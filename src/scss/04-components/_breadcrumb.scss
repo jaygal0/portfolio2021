@@ -1,0 +1,35 @@
+.breadcrumb {
+  @include centerColumn;
+  display: flex;
+  color: grey;
+
+  &__listitems {
+    list-style: none;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    margin: 4rem 0 0 0;
+
+    &:not(:last-of-type)::after {
+      content: '\203a';
+      margin: 0 2rem;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: grey;
+
+    &:hover {
+      color: black;
+    }
+
+    &:active {
+      color: $green;
+    }
+
+    &--active {
+      color: $green;
+      text-decoration: none;
+    }
+  }
+}

@@ -12,8 +12,14 @@
 @import '03-layout/header';
 
 // 04-components
+@import '04-components/cards';
+@import '04-components/breadcrumb';
 @import '04-components/buttons';
 @import '04-components/forms';
 
 // 05-pages
+@import '05-pages/about';
+@import '05-pages/single';
 @import '05-pages/home';
+@import '05-pages/skills';
+@import '05-pages/work';

@@ -1,4 +1,4 @@
-.main__home {
+.main__work {
   grid-column: 1 / -1;
   grid-row: 1;
   display: grid;
@@ -6,13 +6,13 @@
   background: $grey;
 }
 
-.homehero {
+.workhero {
   grid-column: 1 / -1;
   height: 100vh;
   display: grid;
   grid-template-columns: minmax(150px, 1fr) repeat(6, 1fr) minmax(150px, 1fr);
   position: relative;
-  background-image: url('/img/hero.jpg');
+  background-image: url('/img/work.jpg');
   @include backgroundImage;
 
   &__titles {
@@ -27,53 +27,41 @@
   }
 }
 
-.homecards {
-  grid-column: 3 / 7;
+.workcards {
+  @include centerColumn;
+  margin-top: 5rem;
 
-  &__title {
-    margin: 7rem 0;
-  }
   &__first {
     background-image: url('/img/card.jpg');
     @include backgroundImage;
-    @include transition;
-
-    &:hover {
-      @include cardHover;
-    }
-
-    &:active {
-      @include cardActive;
-    }
   }
-
   &__second {
-    background-image: url('/img/work.jpg');
+    background-image: url('/img/card.jpg');
     @include backgroundImage;
-    @include marginBottom;
-    @include transition;
-
-    &:hover {
-      @include cardHover;
-    }
-
-    &:active {
-      @include cardActive;
-    }
   }
-
   &__third {
-    background-image: url('/img/about.jpg');
+    background-image: url('/img/card.jpg');
+    @include backgroundImage;
+  }
+  &__fourth {
+    background-image: url('/img/card.jpg');
+    @include backgroundImage;
+  }
+  &__fifth {
+    background-image: url('/img/card.jpg');
+    @include backgroundImage;
+  }
+  &__sixth {
+    background-image: url('/img/card.jpg');
+    @include backgroundImage;
+  }
+  &__seventh {
+    background-image: url('/img/card.jpg');
     @include backgroundImage;
     @include marginBottom;
-    @include transition;
-
-    &:hover {
-      @include cardHover;
-    }
-
-    &:active {
-      @include cardActive;
-    }
+  }
+  &__eigth {
+    background-image: url('/img/card.jpg');
+    @include backgroundImage;
   }
 }

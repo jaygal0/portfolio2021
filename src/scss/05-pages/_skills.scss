@@ -1,0 +1,77 @@
+.main__skills {
+  grid-column: 1 / -1;
+  grid-row: 1;
+  display: grid;
+  grid-template-columns: minmax(150px, 1fr) repeat(6, 1fr) minmax(150px, 1fr);
+  background: $grey;
+}
+
+.skillshero {
+  grid-column: 1 / -1;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(150px, 1fr) repeat(6, 1fr) minmax(150px, 1fr);
+  position: relative;
+  background-image: url('/img/card.jpg');
+  @include backgroundImage;
+
+  &__titles {
+    grid-column: 3;
+    position: absolute;
+    bottom: 15rem;
+    color: white;
+
+    &--h3 {
+      opacity: 0.5;
+    }
+  }
+}
+
+.skillscards {
+  grid-column: 3 / 7;
+  margin-top: 8rem;
+
+  &__first {
+    background: $blue;
+    position: relative;
+
+    &--textbox {
+      @include cardTextTop;
+      color: white;
+    }
+
+    &--h4 {
+    }
+
+    &--h2 {
+      margin-bottom: 1rem;
+    }
+
+    &--paragraph {
+    }
+  }
+
+  &__second {
+    background: $green;
+
+    &--h2 {
+      font-size: 4rem;
+      color: white;
+      margin: 5rem 2rem;
+      line-height: 6rem;
+    }
+  }
+
+  &__third {
+    background-image: url('/img/card.jpg');
+    background-repeat: none;
+    background-size: cover;
+  }
+
+  &__fourth {
+    background-image: url('/img/card.jpg');
+    background-repeat: none;
+    background-size: cover;
+    @include marginBottom;
+  }
+}

@@ -1,0 +1,118 @@
+.widecard {
+  @include wideCardDimensions;
+
+  &--title {
+    @include cardTextTop;
+    color: white;
+  }
+
+  &--text {
+    @include cardTextBottom;
+    @include whiteBackgroundText;
+    color: $black;
+  }
+}
+
+.wideCardTextOnly {
+  @include wideCardDimensions;
+  color: white;
+
+  &--textbox {
+    @include cardTextTop;
+    color: white;
+  }
+
+  &--h4 {
+  }
+
+  &--h2 {
+    margin-bottom: 1rem;
+  }
+
+  &--paragraph {
+  }
+}
+
+.singleCard {
+  @include singleCardDimensions;
+  color: white;
+
+  &--title {
+    @include cardTextTop;
+  }
+
+  &--text {
+    @include cardTextBottom;
+    @include noWhiteBackgroundText;
+  }
+}
+
+.singleCardHeader {
+  @include singleCardDimensions;
+  &--h2 {
+    font-size: 3.5rem;
+    color: white;
+    margin: 5rem 2rem;
+    line-height: 6rem;
+  }
+}
+
+.cardContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skillsbox {
+  display: flex;
+  align-items: center;
+  margin: 3rem 0;
+
+  &__img {
+    height: 150px;
+    width: 150px;
+    background: black;
+    border-radius: 20px;
+    margin: auto auto;
+  }
+
+  &__textbox {
+    margin-left: 3rem;
+    flex: 1;
+
+    &--h4 {
+    }
+
+    &--h2 {
+      margin-bottom: 1rem;
+    }
+
+    &--level {
+      width: 100%;
+      height: 2.5rem;
+      background: $greybar;
+      border-radius: 30px;
+      position: relative;
+
+      &::before {
+        content: 'skill level';
+        display: flex;
+        font-size: 1.5rem;
+        padding: 1rem;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 90%;
+        border-radius: 30px;
+        background: $green;
+      }
+    }
+  }
+  &__line {
+    color: $greybar;
+    height: 1px;
+    opacity: 0.2;
+  }
+}
