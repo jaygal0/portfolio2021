@@ -36,3 +36,31 @@
 .cover-enter-to .transition {
   transform: translateY(100%);
 }
+
+// .cover-leave {
+//   opacity: 1;
+//   //   transform: translateY(100%);
+// }
+
+// .cover-leave-active {
+//   transition: all 2s ease-in-out;
+// }
+
+// .cover-leave-to {
+//   opacity: 0;
+//   //   transform: translateY(0);
+// }
+
+// .cover-enter {
+//   opacity: 0;
+//   //   transform: translateY(100%);
+// }
+
+// .cover-enter-active {
+//   transition: all 2s ease-in-out;
+// }
+
+// .cover-enter-to {
+//   opacity: 1;
+//   //   transform: translateY(0);
+// }
