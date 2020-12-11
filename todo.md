@@ -1,1 +1,1 @@
-TODO Insert GSAP animations
+TODO Finish Skills page

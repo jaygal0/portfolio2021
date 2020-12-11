@@ -18,29 +18,27 @@
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"
     ></script>
-    <!-- <script defer src="https://unpkg.com/@barba/core"></script> -->
-    <script defer src="/assets/app.js"></script>
+    <script defer src="./assets/app.js"></script>
     <title>Joshua Galinato's Portfolio</title>
   </head>
   <body data-barba="wrapper">
-    <ul class="transition">
-      <li></li>
-    </ul>
+    <div class="transition">
+      <div class="transition__box">sup</div>
+    </div>
     <div data-barba="container" data-barba-namespace="home" class="container">
-      <!-- <div class="transition">hello</div> -->
       <header>
         <nav class="nav">
-          <a href="/index.html"><img src="" alt="" class="nav__logo" /></a>
+          <a href="./index.html"><img src="" alt="" class="nav__logo" /></a>
           <div class="nav__navbar">
             <ul class="nav__unordered">
               <li class="nav__listitems">
-                <a class="nav__link" href="/about.html">about</a>
+                <a class="nav__link" href="./about.html">about</a>
               </li>
               <li class="nav__listitems">
-                <a class="nav__link" href="/work.html">work</a>
+                <a class="nav__link" href="./work.html">work</a>
               </li>
               <li class="nav__listitems">
-                <a class="nav__link" href="/skills.html">skills</a>
+                <a class="nav__link" href="./skills.html">skills</a>
               </li>
               <li class="nav__listitems">
                 <a class="nav__link" href="#">contact</a>
@@ -52,8 +50,10 @@
       <main class="main__home">
         <section class="homehero">
           <div class="homehero__titles">
-            <h3 class="homehero__titles--h3">joshua galinato</h3>
-            <h1 class="homehero__titles--h1">this should be animating</h1>
+            <h3 id="subtitle" class="homehero__titles--h3">joshua galinato</h3>
+            <h1 id="title" class="homehero__titles--h1">
+              this should be animating
+            </h1>
           </div>
         </section>
 
@@ -63,7 +63,7 @@
             ullam officiis dolor!
           </h2>
           <div class="cardContainer">
-            <a href="/skills.html" class="homecards__first widecard">
+            <a href="./skills.html" class="homecards__first widecard">
               <div class="widecard--title">
                 <h4 class="widecard--h4">Lorem ipsum.</h4>
                 <h2 class="widecard--h2">title</h2>
@@ -76,7 +76,7 @@
             </a>
           </div>
           <div class="cardContainer">
-            <a href="/work.html" class="homecards__second singleCard">
+            <a href="./work.html" class="homecards__second singleCard">
               <div class="singleCard--title">
                 <h4 class="singleCard--h4">Lorem ipsum.</h4>
                 <h2 class="singleCard--h2">title</h2>
@@ -87,7 +87,7 @@
                 neque mollitia vel hic perferendis.
               </p>
             </a>
-            <a href="/about.html" class="homecards__third singleCard">
+            <a href="./about.html" class="homecards__third singleCard">
               <div class="singleCard--title">
                 <h4 class="singleCard--h4">Lorem ipsum.</h4>
                 <h2 class="singleCard--h2">title</h2>
@@ -107,16 +107,16 @@
         <div class="footer__nav">
           <ul class="footer__unordered">
             <li class="footer__listitems">
-              <a class="footer__link" href="/index.html">home</a>
+              <a class="footer__link" href="./index.html">home</a>
             </li>
             <li class="footer__listitems">
-              <a class="footer__link" href="/about.html">about</a>
+              <a class="footer__link" href="./about.html">about</a>
             </li>
             <li class="footer__listitems">
-              <a class="footer__link" href="/work.html">work</a>
+              <a class="footer__link" href="./work.html">work</a>
             </li>
             <li class="footer__listitems">
-              <a class="footer__link" href="/skills.html">skills</a>
+              <a class="footer__link" href="./skills.html">skills</a>
             </li>
             <li class="footer__listitems">
               <a class="footer__link" href="#">contact</a>

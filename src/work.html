@@ -19,29 +19,27 @@
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"
     ></script>
-    <!-- <script defer src="https://unpkg.com/@barba/core"></script> -->
-    <script defer src="/assets/app.js"></script>
+    <script defer src="./assets/app.js"></script>
     <title>Work</title>
   </head>
   <body data-barba="wrapper">
-    <ul class="transition">
-      <li></li>
-    </ul>
+    <div class="transition">
+      <div class="transition__box">hello</div>
+    </div>
     <div data-barba="container" data-barba-namespace="work" class="container">
-      <!-- <div class="transition">hello</div> -->
       <header>
         <nav class="nav">
-          <a href="/index.html"><img src="" alt="" class="nav__logo" /></a>
+          <a href="./index.html"><img src="" alt="" class="nav__logo" /></a>
           <div class="nav__navbar">
             <ul class="nav__unordered">
               <li class="nav__listitems">
-                <a class="nav__link" href="/about.html">about</a>
+                <a class="nav__link" href="./about.html">about</a>
               </li>
               <li class="nav__listitems">
-                <a class="nav__link" href="/work.html">work</a>
+                <a class="nav__link" href="./work.html">work</a>
               </li>
               <li class="nav__listitems">
-                <a class="nav__link" href="/skills.html">skills</a>
+                <a class="nav__link" href="./skills.html">skills</a>
               </li>
               <li class="nav__listitems">
                 <a class="nav__link" href="#">contact</a>
@@ -53,19 +51,21 @@
       <main class="main__work">
         <section class="workhero">
           <div class="workhero__titles">
-            <h3 class="workhero__titles--h3">Lorem ipsum dolor sit.</h3>
-            <h1 class="workhero__titles--h1">joshua galinato</h1>
+            <h3 id="subtitle" class="abouthero__titles--h3">
+              Lorem ipsum dolor sit.
+            </h3>
+            <h1 id="title" class="abouthero__titles--h1">joshua galinato</h1>
           </div>
         </section>
 
         <ul class="breadcrumb">
           <li class="breadcrumb__listitems">
-            <a href="/index.html" class="breadcrumb__link"
+            <a href="./index.html" class="breadcrumb__link"
               ><i class="fa fa-home"></i
             ></a>
           </li>
           <li class="breadcrumb__listitems">
-            <a href="/work.html" class="breadcrumb__link--active">work</a>
+            <a href="./work.html" class="breadcrumb__link--active">work</a>
           </li>
         </ul>
 
@@ -81,7 +81,7 @@
 
         <section class="workcards">
           <div class="cardContainer">
-            <a href="/work/single.html" class="workcards__first singleCard">
+            <a href="./work/single.html" class="workcards__first singleCard">
               <div class="singleCard--title">
                 <h4 class="singleCard--h4">Lorem ipsum.</h4>
                 <h2 class="singleCard--h2">title</h2>
@@ -184,16 +184,16 @@
         <div class="footer__nav">
           <ul class="footer__unordered">
             <li class="footer__listitems">
-              <a class="footer__link" href="/index.html">home</a>
+              <a class="footer__link" href="./index.html">home</a>
             </li>
             <li class="footer__listitems">
-              <a class="footer__link" href="/about.html">about</a>
+              <a class="footer__link" href="./about.html">about</a>
             </li>
             <li class="footer__listitems">
-              <a class="footer__link" href="/work.html">work</a>
+              <a class="footer__link" href="./work.html">work</a>
             </li>
             <li class="footer__listitems">
-              <a class="footer__link" href="/skills.html">skills</a>
+              <a class="footer__link" href="./skills.html">skills</a>
             </li>
             <li class="footer__listitems">
               <a class="footer__link" href="#">contact</a>

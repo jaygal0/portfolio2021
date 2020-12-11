@@ -1,13 +1,10 @@
 import barba, { HookMethods } from '@barba/core'
-// import barbaCss from '@barba/css'
-
-// // tell Barba to use the css plugin
-// barba.use(barbaCss)
 
 // register GSAP ScrollTrigger
 gsap.registerPlugin(ScrollTrigger)
 
-barba.hooks.enter(() => {
+// Scroll to the top of the page before the Enter animation
+barba.hooks.beforeEnter(() => {
   window.scrollTo(0, 0)
 })
 
@@ -17,55 +14,66 @@ barba.init({
   transitions: [
     {
       async leave(data) {
+        // Wipe transition
         transition()
+        // delay barba from removing the container to allow the transition wipe to be seamless
         await delay(1000)
         data.current.container.remove()
       },
       async beforeEnter(data) {
+        // To kill and replace new scroll triggers
         ScrollTrigger.getAll().forEach((t) => t.kill())
       },
       async enter(data) {
-        wideCards()
-        singleCards()
-        content()
-
-        console.log('entering')
-        // transition()
+        titles()
+        cards()
       },
-      once(data) {
-        wideCards()
+      async once(data) {
+        onceLoad()
+        titles()
+        cards()
       },
     },
   ],
 })
 
+function cards() {
+  wideCards()
+  singleCards()
+  skillCards()
+}
+
+// To create the wipe transition
 function transition() {
   const tl = gsap.timeline()
 
-  tl.to('.transition li', {
-    duration: 0.8,
+  tl.to('.transition__box', {
+    duration: 1,
     scaleX: 1,
     transformOrigin: 'left',
     stagger: 0.2,
+    ease: 'power3',
   })
 
-  tl.to('.transition li', {
+  tl.to('.transition__box', {
     duration: 1,
     scaleX: 0,
     transformOrigin: 'right',
     stagger: 0.1,
     delay: 0.1,
+    ease: 'power4',
   })
 }
 
+// To create the wide card pop up animations
 function wideCards() {
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: '.widecard',
-      markers: true,
-      start: 'top 85%',
-      end: 'bottom 60%',
-      toggleActions: 'restart none none none',
+      markers: false,
+      start: 'top bottom',
+      end: 'bottom top',
+      toggleActions: 'restart none none reset',
     },
   })
 
@@ -79,14 +87,15 @@ function wideCards() {
   })
 }
 
+// To create the single card pop up animations
 function singleCards() {
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: '.singleCard',
-      markers: true,
-      start: 'top 85%',
-      end: 'bottom 60%',
-      toggleActions: 'restart none none none',
+      markers: false,
+      start: 'top bottom',
+      end: 'bottom top',
+      toggleActions: 'restart none none reset',
     },
   })
 
@@ -100,16 +109,83 @@ function singleCards() {
   })
 }
 
-function content() {
+function skillCards() {
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: '.skillsbox__img',
+      markers: false,
+      start: 'top bottom',
+      end: 'bottom top',
+      toggleActions: 'restart none none reset',
+    },
+    defaults: {
+      opacity: 0,
+      scale: 0.9,
+      y: '20%',
+      ease: 'elastic',
+    },
+  })
+
+  tl.from('.skillsbox__img', {
+    duration: 1,
+    stagger: 0.1,
+  })
+    .from(
+      '.skillsbox__textbox--h4',
+      {
+        duration: 1,
+      },
+      '-=1'
+    )
+    .from(
+      '.skillsbox__textbox--h2',
+      {
+        duration: 1,
+      },
+      '-=.9'
+    )
+    .from(
+      '.skillsbox__textbox--level',
+      {
+        duration: 1,
+        stagger: 0.2,
+      },
+      '-=.3'
+    )
+    .from('.skillsbox__line', {
+      duration: 3,
+      stagger: 0.5,
+    })
+}
+
+function titles() {
+  const tl = gsap.timeline()
+
+  tl.from('#title', {
+    opacity: 0,
+    delay: 1,
+    duration: 0.5,
+    y: '-20px',
+    ease: 'power3',
+  }).from('#subtitle', {
+    opacity: 0,
+    duration: 1,
+    y: '30px',
+    ease: 'power2',
+  })
+}
+
+function onceLoad() {
   const tl = gsap.timeline()
 
   tl.from('.container', {
     opacity: 0,
     duration: 2,
-    delay: 1,
+    delay: 0.8,
   })
 }
 
+// A function to delay the promise
 function delay(n) {
   n = n || 2000
   return new Promise((done) => {
