@@ -45,6 +45,7 @@ function allanimations() {
   singleCards()
   skillCards()
   filterBtns()
+  nav()
 }
 
 // To create the wipe transition
@@ -192,7 +193,7 @@ function onceLoad() {
 function filterBtns() {
   const filterBtns = document.querySelectorAll('.filter__btns')
   const skills = document.querySelectorAll('.skillsbox')
-  const workCards = document.querySelectorAll('.cardContainer')
+  const workCards = document.querySelectorAll('.singleCard')
 
   filterBtns.forEach((e) => {
     e.addEventListener('click', () => {
@@ -223,6 +224,24 @@ function filterBtns() {
         }
       })
     })
+  })
+}
+
+function nav() {
+  const tl = gsap.timeline()
+
+  tl.from('.nav__logo', {
+    opacity: 0,
+    delay: 2,
+    duration: 1,
+    x: '-2rem',
+    ease: 'power5',
+  }).from('.nav__link', {
+    opacity: 0,
+    duration: 0.5,
+    x: '-2rem',
+    ease: 'power5',
+    stagger: 0.7,
   })
 }
 
