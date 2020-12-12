@@ -38,5 +38,17 @@ header {
   &__link {
     text-decoration: none;
     color: white;
+    @include navTransition;
+
+    &:hover {
+      color: $green;
+      padding-bottom: 3px;
+      border-bottom: solid yellow 3px;
+    }
+
+    &--active {
+      color: $blue;
+      padding-bottom: 3px;
+    }
   }
 }

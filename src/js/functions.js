@@ -1,45 +1,4 @@
-import barba, { HookMethods } from '@barba/core'
-
-// register GSAP ScrollTrigger
-gsap.registerPlugin(ScrollTrigger)
-
-// Scroll to the top of the page before the Enter animation
-barba.hooks.enter(() => {
-  window.scrollTo(0, 0)
-})
-
-barba.hooks.once(() => {
-  window.scrollTo(0, 0)
-})
-
-// Initialise Barba
-barba.init({
-  sync: true,
-  transitions: [
-    {
-      async leave(data) {
-        // Wipe transition
-        transition()
-        // delay barba from removing the container to allow the transition wipe to be seamless
-        await delay(1000)
-        data.current.container.remove()
-      },
-      async beforeEnter(data) {
-        // To kill and replace new scroll triggers
-        ScrollTrigger.getAll().forEach((t) => t.kill())
-      },
-      async enter(data) {
-        allanimations()
-      },
-      async once(data) {
-        onceLoad()
-        allanimations()
-      },
-    },
-  ],
-})
-
-function allanimations() {
+export function allanimations() {
   titles()
   wideCards()
   singleCards()
@@ -49,7 +8,7 @@ function allanimations() {
 }
 
 // To create the wipe transition
-function transition() {
+export function transition() {
   const tl = gsap.timeline()
 
   tl.to('.transition__box', {
@@ -67,6 +26,16 @@ function transition() {
     stagger: 0.1,
     delay: 0.1,
     ease: 'power4',
+  })
+}
+
+export function onceLoad() {
+  const tl = gsap.timeline()
+
+  tl.from('.container', {
+    opacity: 0,
+    duration: 2,
+    delay: 0.8,
   })
 }
 
@@ -180,16 +149,6 @@ function titles() {
   })
 }
 
-function onceLoad() {
-  const tl = gsap.timeline()
-
-  tl.from('.container', {
-    opacity: 0,
-    duration: 2,
-    delay: 0.8,
-  })
-}
-
 function filterBtns() {
   const filterBtns = document.querySelectorAll('.filter__btns')
   const skills = document.querySelectorAll('.skillsbox')
@@ -242,15 +201,5 @@ function nav() {
     x: '-2rem',
     ease: 'power5',
     stagger: 0.7,
-  })
-}
-
-// A function to delay the promise
-function delay(n) {
-  n = n || 2000
-  return new Promise((done) => {
-    setTimeout(() => {
-      done()
-    }, n)
   })
 }

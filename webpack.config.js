@@ -8,10 +8,10 @@ const CopyPlugin = require('copy-webpack-plugin')
 module.exports = (env, argv) => ({
   mode: argv.mode,
   devtool: argv.mode === 'development' ? 'source-map' : false,
-  entry: ['babel-polyfill', './src/js/app.js', './src/scss/main.scss'],
+  entry: ['babel-polyfill', './src/js/main.js', './src/scss/main.scss'],
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'assets/app.js',
+    filename: 'assets/bundle.js',
   },
   optimization: {
     minimizer: [
