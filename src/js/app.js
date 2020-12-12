@@ -4,7 +4,11 @@ import barba, { HookMethods } from '@barba/core'
 gsap.registerPlugin(ScrollTrigger)
 
 // Scroll to the top of the page before the Enter animation
-barba.hooks.beforeEnter(() => {
+barba.hooks.enter(() => {
+  window.scrollTo(0, 0)
+})
+
+barba.hooks.once(() => {
   window.scrollTo(0, 0)
 })
 
@@ -25,22 +29,22 @@ barba.init({
         ScrollTrigger.getAll().forEach((t) => t.kill())
       },
       async enter(data) {
-        titles()
-        cards()
+        allanimations()
       },
       async once(data) {
         onceLoad()
-        titles()
-        cards()
+        allanimations()
       },
     },
   ],
 })
 
-function cards() {
+function allanimations() {
+  titles()
   wideCards()
   singleCards()
   skillCards()
+  filterBtns()
 }
 
 // To create the wipe transition
@@ -56,7 +60,7 @@ function transition() {
   })
 
   tl.to('.transition__box', {
-    duration: 1,
+    duration: 0.5,
     scaleX: 0,
     transformOrigin: 'right',
     stagger: 0.1,
@@ -182,6 +186,43 @@ function onceLoad() {
     opacity: 0,
     duration: 2,
     delay: 0.8,
+  })
+}
+
+function filterBtns() {
+  const filterBtns = document.querySelectorAll('.filter__btns')
+  const skills = document.querySelectorAll('.skillsbox')
+  const workCards = document.querySelectorAll('.cardContainer')
+
+  filterBtns.forEach((e) => {
+    e.addEventListener('click', () => {
+      let filterName = e.innerText
+      filterBtns.forEach((e) => {
+        e.classList.remove('activeBtn')
+      })
+      e.classList.add('activeBtn')
+
+      skills.forEach((e) => {
+        let skillsFilter = e.getAttribute('data-filter')
+        e.style.display = 'none'
+
+        if (filterName === skillsFilter) {
+          e.style.display = 'block'
+        } else if (filterName === 'all') {
+          e.style.display = 'block'
+        }
+      })
+      workCards.forEach((e) => {
+        let skillsFilter = e.getAttribute('data-filter')
+        e.style.display = 'none'
+
+        if (filterName === skillsFilter) {
+          e.style.display = 'flex'
+        } else if (filterName === 'all') {
+          e.style.display = 'flex'
+        }
+      })
+    })
   })
 }
 

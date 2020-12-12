@@ -30,48 +30,34 @@
 .skillscards {
   grid-column: 3 / 7;
   margin-top: 8rem;
+}
 
-  &__first {
-    background: $blue;
-    position: relative;
+.photoshop {
+  @include skillsLevel;
 
-    &--textbox {
-      @include cardTextTop;
-      color: white;
-    }
-
-    &--h4 {
-    }
-
-    &--h2 {
-      margin-bottom: 1rem;
-    }
-
-    &--paragraph {
-    }
-  }
-
-  &__second {
+  &::before {
+    @include skillsLevelBefore;
     background: $green;
-
-    &--h2 {
-      font-size: 4rem;
-      color: white;
-      margin: 5rem 2rem;
-      line-height: 6rem;
-    }
+    width: 10%;
   }
+}
 
-  &__third {
-    background-image: url('/img/card.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+.illustrator {
+  @include skillsLevel;
+
+  &::before {
+    @include skillsLevelBefore;
+    background: $blue;
+    width: 80%;
   }
+}
 
-  &__fourth {
-    background-image: url('/img/card.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    @include marginBottom;
+.aftereffects {
+  @include skillsLevel;
+
+  &::before {
+    @include skillsLevelBefore;
+    background: red;
+    width: 40%;
   }
 }
