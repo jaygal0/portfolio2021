@@ -32,57 +32,39 @@
   margin-top: 8rem;
 }
 
-.five {
-  @include skillsLevel;
-
-  &::before {
-    @include skillsLevelBefore;
-    background: $green;
-    width: 50%;
+.skillsbox {
+  &__textbox {
+    &--level {
+      width: 100%;
+      height: 2.5rem;
+      background: $greybar;
+      border-radius: 30px;
+      position: relative;
+    }
   }
+}
+
+.five {
+  @include skillsLevelBefore;
+  width: 50%;
 }
 .six {
-  @include skillsLevel;
-
-  &::before {
-    @include skillsLevelBefore;
-    background: $green;
-    width: 60%;
-  }
+  @include skillsLevelBefore;
+  width: 60%;
 }
 .seven {
-  @include skillsLevel;
-
-  &::before {
-    @include skillsLevelBefore;
-    background: $green;
-    width: 70%;
-  }
+  @include skillsLevelBefore;
+  width: 70%;
 }
 .eight {
-  @include skillsLevel;
-
-  &::before {
-    @include skillsLevelBefore;
-    background: $green;
-    width: 80%;
-  }
+  @include skillsLevelBefore;
+  width: 80%;
 }
 .nine {
-  @include skillsLevel;
-
-  &::before {
-    @include skillsLevelBefore;
-    background: $green;
-    width: 90%;
-  }
+  @include skillsLevelBefore;
+  width: 90%;
 }
 .nine-five {
-  @include skillsLevel;
-
-  &::before {
-    @include skillsLevelBefore;
-    background: $green;
-    width: 95%;
-  }
+  @include skillsLevelBefore;
+  width: 95%;
 }

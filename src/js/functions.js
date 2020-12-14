@@ -110,14 +110,14 @@ function skillCards() {
       {
         duration: 1,
       },
-      '-=1'
+      '-=2'
     )
     .from(
       '.skillsbox__textbox--h2',
       {
         duration: 1,
       },
-      '-=.9'
+      '-=1.9'
     )
     .from(
       '.skillsbox__textbox--level',
@@ -125,12 +125,32 @@ function skillCards() {
         duration: 1,
         stagger: 0.2,
       },
-      '-=.3'
+      '-=1'
     )
-    .from('.skillsbox__line', {
-      duration: 3,
-      stagger: 0.5,
-    })
+    .from(
+      '.bar',
+      {
+        duration: 1,
+        stagger: 0.2,
+        transformOrigin: 'left',
+        scaleX: 0,
+        scaleY: 1,
+        y: 0,
+        ease: 'power4',
+      },
+      '-=3'
+    )
+    .from(
+      '.skillsbox__line',
+      {
+        duration: 2,
+        stagger: 0.5,
+        transformOrigin: 'left',
+        scaleX: 0,
+        ease: 'power2',
+      },
+      '-=4'
+    )
 }
 
 function titles() {

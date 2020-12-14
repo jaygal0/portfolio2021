@@ -10,6 +10,7 @@
     border: solid $green 1px;
     border-radius: 50rem;
     text-transform: capitalize;
+    outline: none;
 
     &:hover {
       background: $green;
