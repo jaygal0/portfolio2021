@@ -1,2 +1,2 @@
-TODO Finish the skills page
 TODO Animate logo when hover
+TODO Implement Dribble style new page

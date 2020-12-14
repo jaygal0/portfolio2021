@@ -101,6 +101,7 @@ function skillCards() {
   })
 
   tl.from('.skillsbox__img', {
+    delay: 0.4,
     duration: 1,
     stagger: 0.1,
   })
@@ -156,17 +157,19 @@ function filterBtns() {
 
   filterBtns.forEach((e) => {
     e.addEventListener('click', () => {
-      let filterName = e.innerText
+      let filterName = e.innerText.toLowerCase()
       filterBtns.forEach((e) => {
         e.classList.remove('activeBtn')
       })
       e.classList.add('activeBtn')
 
       skills.forEach((e) => {
-        let skillsFilter = e.getAttribute('data-filter')
+        let skillsFilter = e.getAttribute('data-filter').split(' ')
+        console.log(skillsFilter)
+        console.log(filterName)
         e.style.display = 'none'
 
-        if (filterName === skillsFilter) {
+        if (skillsFilter.includes(filterName)) {
           e.style.display = 'block'
         } else if (filterName === 'all') {
           e.style.display = 'block'
@@ -176,7 +179,7 @@ function filterBtns() {
         let skillsFilter = e.getAttribute('data-filter')
         e.style.display = 'none'
 
-        if (filterName === skillsFilter) {
+        if (skillsFilter.includes(filterName)) {
           e.style.display = 'flex'
         } else if (filterName === 'all') {
           e.style.display = 'flex'

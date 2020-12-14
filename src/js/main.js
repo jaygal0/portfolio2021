@@ -1,4 +1,7 @@
+// Import barba from modules
 import barba, { HookMethods } from '@barba/core'
+
+// Import functions from functions.js
 import { transition } from './functions.js'
 import { allanimations } from './functions.js'
 import { onceLoad } from './functions.js'

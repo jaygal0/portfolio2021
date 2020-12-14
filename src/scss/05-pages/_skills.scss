@@ -32,32 +32,57 @@
   margin-top: 8rem;
 }
 
-.photoshop {
+.five {
   @include skillsLevel;
 
   &::before {
     @include skillsLevelBefore;
     background: $green;
-    width: 10%;
+    width: 50%;
   }
 }
-
-.illustrator {
+.six {
   @include skillsLevel;
 
   &::before {
     @include skillsLevelBefore;
-    background: $blue;
+    background: $green;
+    width: 60%;
+  }
+}
+.seven {
+  @include skillsLevel;
+
+  &::before {
+    @include skillsLevelBefore;
+    background: $green;
+    width: 70%;
+  }
+}
+.eight {
+  @include skillsLevel;
+
+  &::before {
+    @include skillsLevelBefore;
+    background: $green;
     width: 80%;
   }
 }
-
-.aftereffects {
+.nine {
   @include skillsLevel;
 
   &::before {
     @include skillsLevelBefore;
-    background: red;
-    width: 40%;
+    background: $green;
+    width: 90%;
+  }
+}
+.nine-five {
+  @include skillsLevel;
+
+  &::before {
+    @include skillsLevelBefore;
+    background: $green;
+    width: 95%;
   }
 }
