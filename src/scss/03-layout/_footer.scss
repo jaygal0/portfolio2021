@@ -8,20 +8,21 @@ footer {
 
 .footer {
   &__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     grid-column: 2 / span 1;
-    width: 45px;
-    height: 45px;
-    background: white;
-    border-radius: 50rem;
+    width: 40%;
     padding: 5px;
     margin: 0 auto;
-    margin-top: 9rem;
+    cursor: pointer;
   }
 
   &__nav {
     grid-column: 3 / span 1;
-    margin: 0 auto;
-    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   &__unordered {
@@ -42,11 +43,13 @@ footer {
   &__copyright {
     grid-column: 6 / span 1;
     margin: 0 auto;
-    margin-top: 9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     &--text {
       font-size: 1.5rem;
-      margin: 2rem 0;
+      margin: 1rem 0;
       text-transform: capitalize;
       color: white;
     }

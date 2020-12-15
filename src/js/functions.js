@@ -6,6 +6,7 @@ export function allanimations() {
   filterBtns()
   nav()
   logo()
+  blob()
 }
 
 // To create the wipe transition
@@ -190,6 +191,40 @@ function logo() {
       ease: 'elastic',
     })
   })
+}
+
+function blob() {
+  const tl = gsap.timeline({
+    defaults: {
+      transformOrigin: 'center',
+      ease: 'elastic',
+      duration: 2,
+      scale: 0,
+      rotate: 90,
+      opacity: 0,
+    },
+  })
+
+  tl.from('.blob__right', {
+    delay: 2,
+  })
+    .from(
+      '.blob__middle',
+      {
+        scale: 0.8,
+      },
+      '-=1.5'
+    )
+    .to('.blob__right', {
+      transformOrigin: 'center',
+      rotate: 1,
+      duration: 1,
+      scale: 1.1,
+      yoyo: true,
+      yoyoEase: 'power2.easeOut',
+      repeat: -1,
+      opacity: 1,
+    })
 }
 
 function filterBtns() {

@@ -6,6 +6,11 @@
   background: $grey;
 }
 
+.heroContainer {
+  height: 100vh;
+  width: 100vw;
+}
+
 .homehero {
   grid-column: 1 / -1;
   height: 100vh;
@@ -14,6 +19,14 @@
   position: relative;
   background-image: url('/img/hero.jpg');
   @include backgroundImage;
+
+  &__illustration {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    object-fit: cover;
+  }
 
   &__titles {
     grid-column: 3;
