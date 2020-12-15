@@ -34,34 +34,74 @@
   &__first {
     background-image: url('/img/card.jpg');
     @include backgroundImage;
+    @include transition;
+
+    &:hover {
+      @include cardHover;
+    }
   }
   &__second {
     background-image: url('/img/card.jpg');
     @include backgroundImage;
+    @include transition;
+
+    &:hover {
+      @include cardHover;
+    }
   }
   &__third {
     background-image: url('/img/card.jpg');
     @include backgroundImage;
+    @include transition;
+
+    &:hover {
+      @include cardHover;
+    }
   }
   &__fourth {
     background-image: url('/img/card.jpg');
     @include backgroundImage;
+    @include transition;
+
+    &:hover {
+      @include cardHover;
+    }
   }
   &__fifth {
     background-image: url('/img/card.jpg');
     @include backgroundImage;
+    @include transition;
+
+    &:hover {
+      @include cardHover;
+    }
   }
   &__sixth {
     background-image: url('/img/card.jpg');
     @include backgroundImage;
+    @include transition;
+
+    &:hover {
+      @include cardHover;
+    }
   }
   &__seventh {
     background-image: url('/img/card.jpg');
     @include backgroundImage;
     @include marginBottom;
+    @include transition;
+
+    &:hover {
+      @include cardHover;
+    }
   }
   &__eigth {
     background-image: url('/img/card.jpg');
     @include backgroundImage;
+    @include transition;
+
+    &:hover {
+      @include cardHover;
+    }
   }
 }

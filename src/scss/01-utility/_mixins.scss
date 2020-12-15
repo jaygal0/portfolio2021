@@ -1,5 +1,5 @@
 @mixin transition {
-  transition: scale ease-in 0.2s;
+  transition: scale cubic-bezier(0.39, 0.04, 0.4, 1.25) 0.4s;
 }
 
 @mixin navTransition {

@@ -9,15 +9,15 @@ header {
 .nav {
   grid-template-columns: repeat(6, 1fr);
   display: grid;
+  align-items: center;
 
   &__logo {
     grid-column: 1 / span 1;
     margin: 2rem auto;
     padding: 5px;
-    width: 45px;
-    height: 45px;
-    background: black;
-    border-radius: 50%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
   }
 
   &__navbar {
@@ -38,17 +38,43 @@ header {
   &__link {
     text-decoration: none;
     color: white;
-    @include navTransition;
+    // @include navTransition;
+    position: relative;
+    overflow: hidden;
 
     &:hover {
-      color: $green;
-      padding-bottom: 3px;
-      border-bottom: solid yellow 3px;
+      color: grey;
+      transition: all ease 1s;
+    }
+
+    &:active {
+      color: red;
+    }
+
+    &:hover::after {
+      content: '';
+      width: 100%;
+      bottom: -40%;
+      left: 0;
+      border: red 3px solid;
+      border-radius: 30px;
+      position: absolute;
+      animation: nav 1s;
     }
 
     &--active {
       color: $blue;
       padding-bottom: 3px;
     }
+  }
+}
+
+@keyframes nav {
+  100% {
+    width: 100%;
+  }
+
+  0% {
+    width: 0%;
   }
 }

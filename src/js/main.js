@@ -2,9 +2,7 @@
 import barba, { HookMethods } from '@barba/core'
 
 // Import functions from functions.js
-import { transition } from './functions.js'
-import { allanimations } from './functions.js'
-import { onceLoad } from './functions.js'
+import { transition, allanimations, onceLoad } from './functions.js'
 
 // register GSAP ScrollTrigger
 gsap.registerPlugin(ScrollTrigger)
@@ -19,6 +17,7 @@ barba.hooks.once(() => {
 
 // Initialise Barba
 barba.init({
+  // debug: true,
   sync: true,
   transitions: [
     {
@@ -29,7 +28,7 @@ barba.init({
         await delay(1000)
         data.current.container.remove()
       },
-      async beforeEnter(data) {
+      async afterLeave() {
         // To kill and replace new scroll triggers
         ScrollTrigger.getAll().forEach((t) => t.kill())
       },

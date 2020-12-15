@@ -5,6 +5,7 @@ export function allanimations() {
   skillCards()
   filterBtns()
   nav()
+  logo()
 }
 
 // To create the wipe transition
@@ -170,6 +171,27 @@ function titles() {
   })
 }
 
+function logo() {
+  const logo = document.getElementById('logo')
+  const tl = gsap.timeline()
+
+  logo.addEventListener('mouseenter', () => {
+    tl.to(logo, {
+      overwrite: 'auto',
+      rotate: 180,
+      duration: 2,
+      ease: 'elastic',
+    })
+  })
+  logo.addEventListener('mouseleave', () => {
+    tl.to(logo, {
+      rotate: 0,
+      duration: 1,
+      ease: 'elastic',
+    })
+  })
+}
+
 function filterBtns() {
   const filterBtns = document.querySelectorAll('.filter__btns')
   const skills = document.querySelectorAll('.skillsbox')
@@ -210,19 +232,26 @@ function filterBtns() {
 }
 
 function nav() {
-  const tl = gsap.timeline()
+  const tl = gsap.timeline({
+    defaults: {
+      overwrite: 'auto',
+      opacity: 0,
+      scale: 0.5,
+      ease: 'elastic',
+    },
+  })
 
   tl.from('.nav__logo', {
-    opacity: 0,
-    delay: 2,
-    duration: 1,
-    x: '-2rem',
-    ease: 'power5',
-  }).from('.nav__link', {
-    opacity: 0,
-    duration: 0.5,
-    x: '-2rem',
-    ease: 'power5',
-    stagger: 0.7,
-  })
+    delay: 1.5,
+    duration: 2,
+    rotate: -180,
+    y: '2rem',
+  }).from(
+    '.nav__link',
+    {
+      duration: 3,
+      stagger: 0.7,
+    },
+    '-=1.5'
+  )
 }
