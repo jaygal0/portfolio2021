@@ -2,7 +2,12 @@
 import barba, { HookMethods } from '@barba/core'
 
 // Import functions from functions.js
-import { transition, allanimations, onceLoad } from './functions.js'
+import {
+  transition,
+  allanimations,
+  onceLoad,
+  dateAndTime,
+} from './functions.js'
 
 // register GSAP ScrollTrigger
 gsap.registerPlugin(ScrollTrigger)
@@ -38,6 +43,26 @@ barba.init({
       async once(data) {
         onceLoad()
         allanimations()
+      },
+    },
+    {
+      namespace: 'skills',
+      async leave(data) {
+        transition()
+        await delay(1000)
+        data.current.container.remove()
+      },
+      async afterLeave() {
+        ScrollTrigger.getAll().forEach((t) => t.kill())
+      },
+      async enter(data) {
+        allanimations()
+        dateAndTime()
+      },
+      async once(data) {
+        onceLoad()
+        allanimations()
+        dateAndTime()
       },
     },
   ],

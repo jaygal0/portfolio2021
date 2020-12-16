@@ -6,31 +6,6 @@
   background: $grey;
 }
 
-.homehero {
-  grid-column: 1 / -1;
-  width: 100%;
-  display: grid;
-  grid-template-columns: minmax(150px, 1fr) repeat(6, 1fr) minmax(150px, 1fr);
-  position: relative;
-  overflow: hidden;
-  @include backgroundImage;
-
-  &__illustration {
-    width: 100vw;
-  }
-
-  &__titles {
-    grid-column: 3;
-    position: absolute;
-    bottom: 15rem;
-    color: white;
-
-    &--h3 {
-      opacity: 0.5;
-    }
-  }
-}
-
 .homecards {
   grid-column: 3 / 7;
 

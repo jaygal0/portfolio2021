@@ -361,3 +361,29 @@ function nav() {
     '-=1.5'
   )
 }
+
+import moment from 'moment'
+
+export function dateAndTime() {
+  clock()
+  calendar()
+  seconds()
+}
+
+function clock() {
+  const time = document.getElementById('time')
+  time.innerHTML = moment().format('LTS')
+}
+
+function calendar() {
+  const day = document.getElementById('day')
+  const mon = document.getElementById('month')
+  day.innerHTML = moment().format('Do')
+  mon.innerHTML = moment().format('MMM')
+}
+
+function seconds() {
+  setInterval(() => {
+    clock()
+  }, 1000)
+}
