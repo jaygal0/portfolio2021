@@ -6,7 +6,7 @@ export function allanimations() {
   filterBtns()
   nav()
   logo()
-  blob()
+  heroHome()
 }
 
 // To create the wipe transition
@@ -160,7 +160,7 @@ function titles() {
 
   tl.from('#title', {
     opacity: 0,
-    delay: 1,
+    delay: 4,
     duration: 0.5,
     y: '-20px',
     ease: 'power3',
@@ -193,37 +193,108 @@ function logo() {
   })
 }
 
-function blob() {
-  const tl = gsap.timeline({
+function heroHome() {
+  const blob = gsap.timeline({
     defaults: {
       transformOrigin: 'center',
       ease: 'elastic',
-      duration: 2,
+      duration: 1,
       scale: 0,
       rotate: 90,
       opacity: 0,
     },
   })
 
-  tl.from('.blob__right', {
-    delay: 2,
+  const body = gsap.timeline({
+    defaults: {
+      transformOrigin: 'bottom',
+      ease: 'elastic',
+      duration: 1,
+      scale: 0,
+      y: 90,
+      opacity: 0,
+    },
   })
+
+  blob
+    .from('#blobMiddle', {
+      delay: 2,
+      rotate: 0,
+      scale: 0.7,
+      y: '20%',
+      transformOrigin: 'bottom',
+    })
     .from(
-      '.blob__middle',
+      '#blobRight',
       {
         scale: 0.8,
       },
       '-=1.5'
     )
-    .to('.blob__right', {
-      transformOrigin: 'center',
-      rotate: 1,
-      duration: 1,
-      scale: 1.1,
+    .from('#blobLeft', {}, '-=1.6')
+    .to('#blobRight', {
+      rotate: 2,
       yoyo: true,
-      yoyoEase: 'power2.easeOut',
       repeat: -1,
+      ease: 'power3',
+      yoyoEase: 'power1',
       opacity: 1,
+      scale: 1.1,
+      duration: 3,
+    })
+    .to(
+      '#blobLeft',
+      {
+        rotate: -5,
+        yoyo: true,
+        repeat: -1,
+        ease: 'power3',
+        yoyoEase: 'power1',
+        opacity: 1,
+        scale: 1.1,
+        duration: 3,
+      },
+      '-=.5'
+    )
+
+  body
+    .from('#tshirt', {
+      delay: 2.7,
+      scale: 0.9,
+      y: 4,
+      ease: 'expo',
+    })
+    .from(
+      '#face',
+      {
+        y: 0,
+        scale: 0.9,
+      },
+      '-=2.5'
+    )
+    .from(
+      ['#eyes', '#smile'],
+      {
+        scale: 0.9,
+        y: 4,
+        duration: 1,
+      },
+      '-=2'
+    )
+    .from(
+      '#nose',
+      {
+        duration: 0.4,
+        ease: 'power3',
+        rotate: -89,
+        scale: 0.9,
+        y: 0,
+      },
+      '-=1.2'
+    )
+    .from(['#mustache', '#beard', '#hair', '#eyebrows'], {
+      scale: 0.8,
+      transformOrigin: 'center',
     })
 }
 

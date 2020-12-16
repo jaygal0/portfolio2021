@@ -6,26 +6,17 @@
   background: $grey;
 }
 
-.heroContainer {
-  height: 100vh;
-  width: 100vw;
-}
-
 .homehero {
   grid-column: 1 / -1;
-  height: 100vh;
+  width: 100%;
   display: grid;
   grid-template-columns: minmax(150px, 1fr) repeat(6, 1fr) minmax(150px, 1fr);
   position: relative;
-  background-image: url('/img/hero.jpg');
+  overflow: hidden;
   @include backgroundImage;
 
   &__illustration {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    object-fit: cover;
+    width: 100vw;
   }
 
   &__titles {
