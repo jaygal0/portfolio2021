@@ -1,12 +1,9 @@
-export function allanimations() {
+import moment from 'moment'
+
+export function hero() {
   titles()
-  wideCards()
-  singleCards()
-  skillCards()
-  filterBtns()
   nav()
   logo()
-  heroHome()
 }
 
 // To create the wipe transition
@@ -42,7 +39,7 @@ export function onceLoad() {
 }
 
 // To create the wide card pop up animations
-function wideCards() {
+export function wideCards() {
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: '.widecard',
@@ -64,7 +61,7 @@ function wideCards() {
 }
 
 // To create the single card pop up animations
-function singleCards() {
+export function singleCards() {
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: '.singleCard',
@@ -85,7 +82,7 @@ function singleCards() {
   })
 }
 
-function skillCards() {
+export function skillCards() {
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: '.skillsbox__img',
@@ -193,7 +190,7 @@ function logo() {
   })
 }
 
-function heroHome() {
+export function heroHome() {
   const blob = gsap.timeline({
     defaults: {
       transformOrigin: 'center',
@@ -298,7 +295,7 @@ function heroHome() {
     })
 }
 
-function filterBtns() {
+export function filterBtns() {
   const filterBtns = document.querySelectorAll('.filter__btns')
   const skills = document.querySelectorAll('.skillsbox')
   const workCards = document.querySelectorAll('.singleCard')
@@ -313,8 +310,6 @@ function filterBtns() {
 
       skills.forEach((e) => {
         let skillsFilter = e.getAttribute('data-filter').split(' ')
-        console.log(skillsFilter)
-        console.log(filterName)
         e.style.display = 'none'
 
         if (skillsFilter.includes(filterName)) {
@@ -362,27 +357,25 @@ function nav() {
   )
 }
 
-import moment from 'moment'
-
-export function dateAndTime() {
-  clock()
-  calendar()
-  seconds()
-}
-
-function clock() {
+// Using moment.js library here
+// To tell the time on the hero on the 'skills' page
+export function clock() {
   const time = document.getElementById('time')
-  time.innerHTML = moment().format('LTS')
+  if (time) {
+    time.innerHTML = moment().format('LTS')
+  }
 }
 
-function calendar() {
+// To tell the date on the hero on the 'skills' page
+export function calendar() {
   const day = document.getElementById('day')
   const mon = document.getElementById('month')
   day.innerHTML = moment().format('Do')
   mon.innerHTML = moment().format('MMM')
 }
 
-function seconds() {
+// To make the clock() activate every second
+export function seconds() {
   setInterval(() => {
     clock()
   }, 1000)

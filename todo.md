@@ -1,4 +1,5 @@
-TODO Fix calendar and time reload
-TODO Animate latest hero
-TODO Create the rest of the animations
+TODO Design About illustration
+TODO Design Work illustration
+TODO Animate hero's
+TODO Clean up hero animation code
 TODO Implement Dribble style new page

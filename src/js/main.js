@@ -4,9 +4,16 @@ import barba, { HookMethods } from '@barba/core'
 // Import functions from functions.js
 import {
   transition,
-  allanimations,
+  hero,
   onceLoad,
-  dateAndTime,
+  heroHome,
+  wideCards,
+  singleCards,
+  skillCards,
+  filterBtns,
+  clock,
+  calendar,
+  seconds,
 } from './functions.js'
 
 // register GSAP ScrollTrigger
@@ -26,27 +33,77 @@ barba.init({
   sync: true,
   transitions: [
     {
-      async leave(data) {
-        // Wipe transition
-        transition()
-        // delay barba from removing the container to allow the transition wipe to be seamless
-        await delay(1000)
-        data.current.container.remove()
+      name: 'homeLoad',
+      to: {
+        namespace: ['home'],
       },
-      async afterLeave() {
-        // To kill and replace new scroll triggers
-        ScrollTrigger.getAll().forEach((t) => t.kill())
-      },
-      async enter(data) {
-        allanimations()
-      },
-      async once(data) {
+      once(data) {
         onceLoad()
-        allanimations()
+        hero()
+        heroHome()
+        wideCards()
+        singleCards()
       },
     },
     {
-      namespace: 'skills',
+      name: 'aboutLoad',
+      to: {
+        namespace: ['about'],
+      },
+      once() {
+        onceLoad()
+        hero()
+        wideCards()
+        singleCards()
+      },
+    },
+    {
+      name: 'workLoad',
+      to: {
+        namespace: ['work'],
+      },
+      once() {
+        onceLoad()
+        hero()
+        filterBtns()
+        singleCards()
+      },
+    },
+    {
+      name: 'skillsLoad',
+      to: {
+        namespace: ['skills'],
+      },
+      once() {
+        onceLoad()
+        hero()
+        skillCards()
+        filterBtns()
+        clock()
+        calendar()
+        seconds()
+      },
+    },
+    {
+      name: 'detailLoad',
+      to: {
+        namespace: ['detail'],
+      },
+      once() {
+        onceLoad()
+        hero()
+        wideCards()
+        singleCards()
+      },
+    },
+    {
+      name: 'home',
+      from: {
+        namespace: ['about', 'work', 'skills', 'detail'],
+      },
+      to: {
+        namespace: ['home'],
+      },
       async leave(data) {
         transition()
         await delay(1000)
@@ -56,13 +113,101 @@ barba.init({
         ScrollTrigger.getAll().forEach((t) => t.kill())
       },
       async enter(data) {
-        allanimations()
-        dateAndTime()
+        heroHome()
+        hero()
+        wideCards()
+        singleCards()
       },
-      async once(data) {
-        onceLoad()
-        allanimations()
-        dateAndTime()
+    },
+    {
+      name: 'about',
+      from: {
+        namespace: ['home', 'work', 'skills', 'detail'],
+      },
+      to: {
+        namespace: ['about'],
+      },
+      async leave(data) {
+        transition()
+        await delay(1000)
+        data.current.container.remove()
+      },
+      async afterLeave() {
+        ScrollTrigger.getAll().forEach((t) => t.kill())
+      },
+      async enter(data) {
+        hero()
+        wideCards()
+        singleCards()
+      },
+    },
+    {
+      name: 'work',
+      from: {
+        namespace: ['about', 'home', 'skills', 'detail'],
+      },
+      to: {
+        namespace: ['work'],
+      },
+      async leave(data) {
+        transition()
+        await delay(1000)
+        data.current.container.remove()
+      },
+      async afterLeave() {
+        ScrollTrigger.getAll().forEach((t) => t.kill())
+      },
+      async enter(data) {
+        hero()
+        filterBtns()
+        singleCards()
+      },
+    },
+    {
+      name: 'skills',
+      from: {
+        namespace: ['about', 'work', 'home', 'detail'],
+      },
+      to: {
+        namespace: ['skills'],
+      },
+      async leave(data) {
+        transition()
+        await delay(1000)
+        data.current.container.remove()
+      },
+      async afterLeave() {
+        ScrollTrigger.getAll().forEach((t) => t.kill())
+      },
+      async enter(data) {
+        hero()
+        skillCards()
+        filterBtns()
+        clock()
+        calendar()
+        seconds()
+      },
+    },
+    {
+      name: 'detail',
+      from: {
+        namespace: ['about', 'work', 'home', 'skills', 'detail'],
+      },
+      to: {
+        namespace: ['detail'],
+      },
+      async leave(data) {
+        transition()
+        await delay(1000)
+        data.current.container.remove()
+      },
+      async afterLeave() {
+        ScrollTrigger.getAll().forEach((t) => t.kill())
+      },
+      async enter(data) {
+        hero()
+        wideCards()
+        singleCards()
       },
     },
   ],
