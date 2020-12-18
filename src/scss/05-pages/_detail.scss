@@ -1,0 +1,64 @@
+.main__single {
+  grid-column: 1 / -1;
+  grid-row: 1;
+  display: grid;
+  grid-template-columns: minmax(150px, 1fr) repeat(6, 1fr) minmax(150px, 1fr);
+  background: $grey;
+}
+
+.backBtn a {
+  text-decoration: none;
+  color: gray;
+
+  &:hover {
+    color: $green;
+    cursor: pointer;
+  }
+}
+.backBtn {
+  @include centerColumn;
+  display: flex;
+  align-items: center;
+  margin: 4rem 0 0 0;
+  color: gray;
+  font-size: 1.8rem;
+  text-transform: capitalize;
+
+  &__arrow {
+    margin-right: 2rem;
+  }
+}
+
+.close {
+  display: flex;
+  justify-content: flex-end;
+  margin: 4rem 0 0 0;
+}
+
+.closeBtn {
+  width: 60%;
+}
+
+.singlecards {
+  grid-column: 3 / 7;
+  margin-top: 8rem;
+
+  &__first {
+    background: $blue;
+  }
+
+  &__second {
+    background: $green;
+  }
+
+  &__third {
+    background-image: url('/img/card.jpg');
+    @include backgroundImage;
+  }
+
+  &__fourth {
+    background-image: url('/img/card.jpg');
+    @include backgroundImage;
+    @include marginBottom;
+  }
+}

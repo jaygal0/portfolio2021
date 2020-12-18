@@ -7,3 +7,9 @@
 .wrapper {
   position: relative;
 }
+
+.detail {
+  display: grid;
+  grid-template-columns: minmax(150px, 1fr) repeat(6, 1fr) minmax(150px, 1fr);
+  grid-template-rows: min-content;
+}

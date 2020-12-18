@@ -200,7 +200,7 @@ barba.init({
     {
       name: 'detail',
       from: {
-        namespace: ['about', 'work', 'home', 'skills', 'detail'],
+        namespace: ['about', 'work', 'home', 'skills'],
       },
       to: {
         namespace: ['detail'],
@@ -213,11 +213,7 @@ barba.init({
       async afterLeave() {
         ScrollTrigger.getAll().forEach((t) => t.kill())
       },
-      async enter(data) {
-        hero()
-        wideCards()
-        singleCards()
-      },
+      async enter(data) {},
     },
   ],
 })
