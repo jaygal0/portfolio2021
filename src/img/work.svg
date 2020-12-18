@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2159.89 1120.66">
+  <g id="background">
+    <rect width="2159.89" height="1120.66" style="fill: #68c4b8"/>
+  </g>
+  <g id="stand">
+    <path d="M1276.55,1033.84s-15.21,36.94-19.22,86.82H905.53c-4.28-46.29-19.95-86.82-19.95-86.82Z" transform="translate(0)" style="fill: #c6c6c6"/>
+  </g>
+  <g id="behindCanvas">
+    <rect x="444.31" y="282.77" width="1049.14" height="734.66" style="fill: gray;stroke: #4d4d4d;stroke-miterlimit: 10;stroke-width: 0.253687512839512px"/>
+  </g>
+  <g id="canvasWhite">
+    <rect x="519.67" y="353.34" width="897.93" height="564.69" style="fill: #fff;stroke: #2d2d2d;stroke-miterlimit: 10;stroke-width: 0.779292333493788px"/>
+  </g>
+  <g id="interface">
+    <rect x="348.84" y="191.17" width="1462.2" height="72.13" style="fill: #666;stroke: #4d4d4d;stroke-miterlimit: 10;stroke-width: 0.75px"/>
+    <rect x="444.31" y="263.31" width="1049.14" height="19.46" style="fill: #4d4d4d;stroke: #4d4d4d;stroke-miterlimit: 10;stroke-width: 0.879996903615407px"/>
+    <rect x="444.31" y="263.31" width="185.01" height="19.46" style="fill: gray;stroke: #333;stroke-miterlimit: 10;stroke-width: 0.36954044224408px"/>
+    <rect x="348.84" y="263.31" width="95.47" height="754.13" style="fill: #666;stroke: #333;stroke-miterlimit: 10;stroke-width: 0.36954044224408px"/>
+    <rect x="1493.46" y="263.31" width="317.59" height="754.13" style="fill: #666;stroke: #4d4d4d;stroke-miterlimit: 10"/>
+    <rect x="629.32" y="263.31" width="185.01" height="19.46" style="fill: #666;stroke: #333;stroke-miterlimit: 10;stroke-width: 0.36954044224408px"/>
+    <rect x="814.34" y="263.31" width="185.01" height="19.46" style="fill: #666;stroke: #333;stroke-miterlimit: 10;stroke-width: 0.36954044224408px"/>
+    <rect x="999.35" y="263.31" width="185.01" height="19.46" style="fill: #666;stroke: #333;stroke-miterlimit: 10;stroke-width: 0.36954044224408px"/>
+    <rect x="1290.44" y="263.31" width="203.14" height="442.84" style="fill: #666;stroke: #4d4d4d;stroke-miterlimit: 10;stroke-width: 0.612871142604628px"/>
+    <rect x="1304.58" y="280.95" width="35.11" height="5.84" rx="2.92" style="fill: #ccc"/>
+    <line x1="1479.19" y1="471.7" x2="1304.58" y2="471.7" style="fill: none;stroke: #999;stroke-miterlimit: 10;stroke-width: 0.25px"/>
+    <line x1="1479.19" y1="544.58" x2="1304.58" y2="544.58" style="fill: none;stroke: #999;stroke-miterlimit: 10;stroke-width: 0.25px"/>
+    <line x1="1479.19" y1="617.45" x2="1304.58" y2="617.45" style="fill: none;stroke: #999;stroke-miterlimit: 10;stroke-width: 0.25px"/>
+  </g>
+  <g id="toolsLeft">
+    <g>
+      <rect x="365.87" y="291.83" width="25" height="25" rx="4.63" style="fill: #ccc"/>
+      <rect x="402.28" y="291.83" width="25" height="25" rx="4.63" style="fill: #ccc"/>
+    </g>
+    <g>
+      <rect x="365.87" y="328.34" width="25" height="25" rx="4.63" style="fill: #ccc"/>
+      <rect x="402.28" y="328.34" width="25" height="25" rx="4.63" style="fill: #ccc"/>
+    </g>
+    <g>
+      <rect x="365.87" y="364.86" width="25" height="25" rx="4.63" style="fill: #ccc"/>
+      <rect x="402.28" y="364.86" width="25" height="25" rx="4.63" style="fill: #ccc"/>
+    </g>
+    <g>
+      <rect x="365.87" y="401.38" width="25" height="25" rx="4.63" style="fill: #ccc"/>
+      <rect x="402.28" y="401.38" width="25" height="25" rx="4.63" style="fill: #ccc"/>
+    </g>
+    <g>
+      <rect x="365.87" y="437.89" width="25" height="25" rx="4.63" style="fill: #ccc"/>
+      <rect x="402.28" y="437.89" width="25" height="25" rx="4.63" style="fill: #ccc"/>
+    </g>
+    <g>
+      <rect x="365.87" y="474.41" width="25" height="25" rx="4.63" style="fill: #ccc"/>
+      <rect x="402.28" y="474.41" width="25" height="25" rx="4.63" style="fill: #ccc"/>
+    </g>
+    <g>
+      <rect x="365.87" y="510.93" width="25" height="25" rx="4.63" style="fill: #ccc"/>
+      <rect x="402.28" y="510.93" width="25" height="25" rx="4.63" style="fill: #ccc"/>
+    </g>
+    <g>
+      <rect x="365.87" y="547.44" width="25" height="25" rx="4.63" style="fill: #ccc"/>
+      <rect x="402.28" y="547.44" width="25" height="25" rx="4.63" style="fill: #ccc"/>
+    </g>
+    <g>
+      <rect x="365.87" y="583.96" width="25" height="25" rx="4.63" style="fill: #ccc"/>
+      <rect x="402.28" y="583.96" width="25" height="25" rx="4.63" style="fill: #ccc"/>
+    </g>
+  </g>
+  <g id="toolsRight">
+    <rect x="1511.81" y="292.15" width="25" height="25" rx="4.63" style="fill: #ccc"/>
+    <rect x="1511.81" y="345.99" width="25" height="25" rx="4.63" style="fill: #ccc"/>
+    <rect x="1511.81" y="399.83" width="25" height="25" rx="4.63" style="fill: #ccc"/>
+    <rect x="1511.81" y="453.67" width="25" height="25" rx="4.63" style="fill: #ccc"/>
+    <rect x="1511.81" y="507.51" width="25" height="25" rx="4.63" style="fill: #ccc"/>
+    <rect x="1511.81" y="561.35" width="25" height="25" rx="4.63" style="fill: #ccc"/>
+    <rect x="1511.81" y="615.19" width="25" height="25" rx="4.63" style="fill: #ccc"/>
+    <rect x="1511.81" y="669.03" width="25" height="25" rx="4.63" style="fill: #ccc"/>
+    <rect x="1511.81" y="722.87" width="25" height="25" rx="4.63" style="fill: #ccc"/>
+    <rect x="1511.81" y="776.71" width="25" height="25" rx="4.63" style="fill: #ccc"/>
+  </g>
+  <g id="dummyText">
+    <rect x="452.99" y="219.78" width="55.36" height="11.68" rx="4.63" style="fill: #ccc"/>
+    <rect x="457.1" y="271.07" width="114.5" height="3.93" rx="1.96" style="fill: #ccc"/>
+    <rect x="642.11" y="271.07" width="114.5" height="3.93" rx="1.96" style="fill: #ccc"/>
+    <rect x="827.12" y="271.07" width="114.5" height="3.93" rx="1.96" style="fill: #ccc"/>
+    <rect x="1012.13" y="271.07" width="114.5" height="3.93" rx="1.96" style="fill: #ccc"/>
+    <rect x="573.96" y="219.78" width="55.36" height="11.68" rx="4.63" style="fill: #ccc"/>
+    <rect x="694.94" y="219.78" width="55.36" height="11.68" rx="4.63" style="fill: #ccc"/>
+    <rect x="815.91" y="219.78" width="55.36" height="11.68" rx="4.63" style="fill: #ccc"/>
+    <rect x="936.89" y="219.78" width="55.36" height="11.68" rx="4.63" style="fill: #ccc"/>
+    <rect x="1057.86" y="219.78" width="55.36" height="11.68" rx="4.63" style="fill: #ccc"/>
+    <rect x="1575.49" y="298.81" width="55.36" height="11.68" rx="4.63" style="fill: #ccc"/>
+    <rect x="1575.49" y="516.2" width="55.36" height="11.68" rx="4.63" style="fill: #ccc"/>
+    <rect x="1575.49" y="541.66" width="209.56" height="5.84" rx="2.92" style="fill: #ccc"/>
+    <rect x="1575.49" y="557.41" width="209.56" height="5.84" rx="2.92" style="fill: #ccc"/>
+    <rect x="1575.49" y="325.02" width="209.56" height="5.84" rx="2.92" style="fill: #ccc"/>
+    <rect x="1575.49" y="340.78" width="209.56" height="5.84" rx="2.92" style="fill: #ccc"/>
+    <rect x="1575.49" y="573.16" width="209.56" height="5.84" rx="2.92" style="fill: #ccc"/>
+  </g>
+  <g id="green">
+    <rect x="1304.58" y="421.72" width="35.11" height="35.11" style="fill: #68c4b8;stroke: #fff;stroke-miterlimit: 10;stroke-width: 0.821999929074093px"/>
+  </g>
+  <g id="darkGreen">
+    <rect x="1304.58" y="491.92" width="35.11" height="35.11" style="fill: #28786d;stroke: #fff;stroke-miterlimit: 10;stroke-width: 0.821999929074093px"/>
+  </g>
+  <g id="brown">
+    <rect x="1304.58" y="562.12" width="35.11" height="35.11" style="fill: #c58569;stroke: #fff;stroke-miterlimit: 10;stroke-width: 0.821999929074093px"/>
+  </g>
+  <g id="blue">
+    <rect x="1304.58" y="632.32" width="35.11" height="35.11" style="fill: #0c3d5e;stroke: #fff;stroke-miterlimit: 10;stroke-width: 0.821999929074093px"/>
+  </g>
+  <g id="icon">
+    <g>
+      <g id="Layer_2" data-name="Layer 2">
+        <g id="Layer_1-2" data-name="Layer 1-2">
+          <g id="Layer_2-2" data-name="Layer 2-2">
+            <g id="Surfaces">
+              <g id="Drawing_Surface" data-name="Drawing Surface">
+                <g id="Outline_no_shadow" data-name="Outline no shadow">
+                  <path d="M382.49,204.35h28.18a7.71,7.71,0,0,1,7.72,7.71h0v27.09a7.72,7.72,0,0,1-7.71,7.73H382.49a7.73,7.73,0,0,1-7.73-7.72h0V212.07a7.72,7.72,0,0,1,7.71-7.72Z" transform="translate(0)" style="fill: #300"/>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+      <g id="Outlined_Mnemonics_Logos" data-name="Outlined Mnemonics Logos">
+        <g id="Ai">
+          <path d="M399.75,230.67H393l-1.38,4.27a.34.34,0,0,1-.35.26h-3.42c-.2,0-.25-.11-.2-.33L393.5,218q.08-.27.18-.6a6.73,6.73,0,0,0,.11-1.18.17.17,0,0,1,.14-.2h4.71c.15,0,.22.05.24.14l6.63,18.73c.06.2,0,.29-.18.29h-3.8a.29.29,0,0,1-.29-.2ZM394,227h4.62c-.11-.38-.26-.84-.42-1.31s-.33-1-.49-1.56-.35-1.11-.53-1.67-.34-1.1-.49-1.62-.27-1-.4-1.42h0a23.71,23.71,0,0,1-.62,2.34c-.28.88-.55,1.79-.84,2.69S394.31,226.22,394,227Z" transform="translate(0)" style="fill: #ff9a00"/>
+        </g>
+      </g>
+    </g>
+  </g>
+  <g id="text">
+    <text transform="translate(1304.58 386.6)" style="font-size: 22.63067054748535px;fill: #e6e6e6;font-family: HelveticaNeue-Light, Helvetica Neue;font-weight: 300">Select color</text>
+  </g>
+  <g id="swatch">
+    <path d="M379.57,656.14v52.71h52.71V656.14Zm42.71,42.71H389.57V666.14h32.71Z" transform="translate(0)" style="fill: #fff;stroke: #000;stroke-miterlimit: 10;stroke-width: 0.25px"/>
+    <polygon points="432.16 656.26 379.7 708.23 379.7 708.73 432.16 656.79 432.16 656.26" style="fill: #e00"/>
+    <rect x="389.46" y="666.02" width="32.83" height="32.83" style="fill: #666"/>
+    <path d="M1313.66,319.17v24.19h24.19V319.17Zm19.6,19.6h-15v-15h15Z" transform="translate(0)" style="fill: #fff;stroke: #000;stroke-miterlimit: 10;stroke-width: 0.114722430706024px"/>
+    <polygon points="1337.79 319.23 1313.71 343.07 1313.71 343.3 1337.79 319.47 1337.79 319.23" style="fill: #e00"/>
+    <rect x="1318.25" y="323.59" width="15.18" height="15.18" style="fill: #666;stroke: #1a1a1a;stroke-miterlimit: 10;stroke-width: 0.1px"/>
+  </g>
+  <g id="changeColor">
+    <path d="M857.33,675c0,30.14-37.22,73.76-67.36,73.76s-67.35-36.66-67.35-66.8,28.71-61.53,58.85-61.53c15.06,0,18.41,28.88,29.82,36.93C833.15,672.85,857.33,660,857.33,675Z" transform="translate(0)" style="fill: #68c4b8;stroke: #fff;stroke-miterlimit: 10;stroke-width: 0.59452524068737px"/>
+    <path d="M812.85,561.7C855,472.9,1025.7,396.47,1114.5,438.64s191.92,277.79,105,291.05c-97.18,14.83-170.67,141.12-259.47,98.95-44.4-21.08-13.85-110.84-36.18-150.55C881,602,791.76,606.1,812.85,561.7Z" transform="translate(0)" style="fill: #68c4b8;stroke: #fff;stroke-miterlimit: 10;stroke-width: 1.93915133550291px"/>
+    <rect x="363.8" y="640.37" width="42.71" height="42.71" style="fill: #68c4b8;stroke: #fff;stroke-miterlimit: 10"/>
+    <rect x="1306.42" y="311.93" width="19.6" height="19.6" style="fill: #68c4b8;stroke: #fff;stroke-miterlimit: 10;stroke-width: 0.458889722824097px"/>
+  </g>
+  <g id="monitor">
+    <path d="M1827.45,1050.24h-1495a16.41,16.41,0,0,1-16.41-16.4V174.73a16.41,16.41,0,0,1,16.41-16.41h1495a16.41,16.41,0,0,1,16.4,16.41v859.11A16.4,16.4,0,0,1,1827.45,1050.24ZM348.84,1017.43H1811.05V191.13H348.84Z" transform="translate(0)"/>
+  </g>
+</svg>

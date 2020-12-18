@@ -6,24 +6,26 @@
   background: $grey;
 }
 
-.workhero {
-  grid-column: 1 / -1;
-  height: 100vh;
-  display: grid;
-  grid-template-columns: minmax(150px, 1fr) repeat(6, 1fr) minmax(150px, 1fr);
-  position: relative;
-  background-image: url('/img/work.jpg');
-  @include backgroundImage;
+// For the hero
+#behindCanvas {
+  &:hover {
+    cursor: url('/img/cursor.svg'), auto;
+  }
+}
 
-  &__titles {
-    grid-column: 3;
-    position: absolute;
-    bottom: 15rem;
-    color: white;
+#canvasWhite,
+.blob {
+  &:hover {
+    cursor: url('/img/cursor2.svg'), auto;
+  }
+}
 
-    &--h3 {
-      opacity: 0.5;
-    }
+#green,
+#darkGreen,
+#blue,
+#brown {
+  &:hover {
+    cursor: pointer;
   }
 }
 

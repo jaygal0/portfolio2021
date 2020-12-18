@@ -4,17 +4,22 @@ import barba, { HookMethods } from '@barba/core'
 // Import functions from functions.js
 import {
   transition,
-  hero,
   onceLoad,
-  heroHome,
   wideCards,
   singleCards,
   skillCards,
   filterBtns,
+} from './functions.js'
+
+import {
+  hero,
+  homeHero,
+  loadingCircles,
+  workHeroColor,
   clock,
   calendar,
   seconds,
-} from './functions.js'
+} from './heroAnimation.js'
 
 // register GSAP ScrollTrigger
 gsap.registerPlugin(ScrollTrigger)
@@ -40,7 +45,7 @@ barba.init({
       once(data) {
         onceLoad()
         hero()
-        heroHome()
+        homeHero()
         wideCards()
         singleCards()
       },
@@ -55,6 +60,7 @@ barba.init({
         hero()
         wideCards()
         singleCards()
+        loadingCircles()
       },
     },
     {
@@ -67,6 +73,7 @@ barba.init({
         hero()
         filterBtns()
         singleCards()
+        workHeroColor()
       },
     },
     {
@@ -113,8 +120,8 @@ barba.init({
         ScrollTrigger.getAll().forEach((t) => t.kill())
       },
       async enter(data) {
-        heroHome()
         hero()
+        homeHero()
         wideCards()
         singleCards()
       },
@@ -139,6 +146,7 @@ barba.init({
         hero()
         wideCards()
         singleCards()
+        loadingCircles()
       },
     },
     {
@@ -161,6 +169,7 @@ barba.init({
         hero()
         filterBtns()
         singleCards()
+        workHeroColor()
       },
     },
     {
