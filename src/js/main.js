@@ -1,38 +1,13 @@
 // Import barba from modules
 import barba, { HookMethods } from '@barba/core'
 
-function enterDetail() {
-  const tl = gsap.timeline()
-
-  tl.from('.detail', {
-    y: '100%',
-    duration: 1,
-    ease: 'power3',
-  })
-}
-
-function leaveDetail() {
-  const tl = gsap.timeline()
-
-  tl.to('.detail', {
-    y: '100%',
-    duration: 3,
-    ease: 'power3',
-  })
-}
-
-function enterWork() {
-  const tl = gsap.timeline()
-
-  tl.from('.workContainer', {
-    opacity: 1,
-    duration: 1,
-    ease: 'power3',
-  })
-}
 // Import functions from functions.js
 import {
   transition,
+  enterDetail,
+  borderColorsDetail,
+  leaveDetail,
+  enterWork,
   onceLoad,
   wideCards,
   singleCards,
@@ -127,6 +102,7 @@ barba.init({
       },
       once() {
         onceLoad()
+        borderColorsDetail()
       },
     },
     {
@@ -238,6 +214,7 @@ barba.init({
       },
       enter(data) {
         enterDetail()
+        borderColorsDetail()
       },
     },
     {
