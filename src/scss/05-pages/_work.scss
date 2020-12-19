@@ -34,9 +34,10 @@
   margin-top: 5rem;
 
   &__first {
-    background-image: url('/img/card.jpg');
+    background-image: url('/img/kawaiiInstagram1.png');
     @include backgroundImage;
     @include transition;
+    background-position: center;
 
     &:hover {
       @include cardHover;

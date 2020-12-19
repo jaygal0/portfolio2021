@@ -20,11 +20,6 @@ import {
   homeHero,
   aboutHero,
   workHero,
-  loadingCircles,
-  workHeroColor,
-  clock,
-  calendar,
-  seconds,
   skillsHero,
 } from './heroAnimation.js'
 
@@ -232,6 +227,7 @@ barba.init({
       },
       async enter(data) {
         workHero()
+        hero()
         enterWork()
       },
     },

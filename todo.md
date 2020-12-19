@@ -1,2 +1,2 @@
-TODO Animate hero's
 TODO Implement Work
+TODO Add darkmode.js

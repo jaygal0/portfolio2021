@@ -1,4 +1,4 @@
-.main__detail {
+.main__single {
   grid-column: 1 / -1;
   grid-row: 1;
   display: grid;
@@ -34,5 +34,29 @@
 
   &__arrow {
     margin-right: 2rem;
+  }
+}
+
+.kawaiiCards {
+  grid-column: 3 / 7;
+  margin-top: 8rem;
+
+  &__first {
+    background-image: url('/img/kawaiiBanner.png');
+    @include backgroundImage;
+  }
+
+  &__second {
+    background: $green;
+  }
+
+  &__third {
+    background: $blue;
+  }
+
+  &__fourth {
+    background-image: url('/img/card.jpg');
+    @include backgroundImage;
+    @include marginBottom;
   }
 }

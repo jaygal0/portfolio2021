@@ -227,7 +227,7 @@ export function filterBtns() {
         }
       })
       workCards.forEach((e) => {
-        let skillsFilter = e.getAttribute('data-filter')
+        let skillsFilter = e.getAttribute('data-filter').split(' ')
         e.style.display = 'none'
 
         if (skillsFilter.includes(filterName)) {
