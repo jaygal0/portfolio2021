@@ -18,11 +18,14 @@ import {
 import {
   hero,
   homeHero,
+  aboutHero,
+  workHero,
   loadingCircles,
   workHeroColor,
   clock,
   calendar,
   seconds,
+  skillsHero,
 } from './heroAnimation.js'
 
 // register GSAP ScrollTrigger
@@ -61,10 +64,10 @@ barba.init({
       },
       once() {
         onceLoad()
+        aboutHero()
         hero()
         wideCards()
         singleCards()
-        loadingCircles()
       },
     },
     {
@@ -74,10 +77,10 @@ barba.init({
       },
       once() {
         onceLoad()
+        workHero()
         hero()
         filterBtns()
         singleCards()
-        workHeroColor()
       },
     },
     {
@@ -87,12 +90,10 @@ barba.init({
       },
       once() {
         onceLoad()
+        skillsHero()
         hero()
         skillCards()
         filterBtns()
-        clock()
-        calendar()
-        seconds()
       },
     },
     {
@@ -145,10 +146,10 @@ barba.init({
         ScrollTrigger.getAll().forEach((t) => t.kill())
       },
       async enter(data) {
+        aboutHero()
         hero()
         wideCards()
         singleCards()
-        loadingCircles()
       },
     },
     {
@@ -168,10 +169,10 @@ barba.init({
         ScrollTrigger.getAll().forEach((t) => t.kill())
       },
       async enter(data) {
+        workHero()
         hero()
         filterBtns()
         singleCards()
-        workHeroColor()
       },
     },
     {
@@ -191,12 +192,10 @@ barba.init({
         ScrollTrigger.getAll().forEach((t) => t.kill())
       },
       async enter(data) {
+        skillsHero()
         hero()
         skillCards()
         filterBtns()
-        clock()
-        calendar()
-        seconds()
       },
     },
     {
@@ -232,6 +231,7 @@ barba.init({
         // data.current.container.remove()
       },
       async enter(data) {
+        workHero()
         enterWork()
       },
     },
