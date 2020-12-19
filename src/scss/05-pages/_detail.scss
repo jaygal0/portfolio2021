@@ -6,6 +6,13 @@
   background: $grey;
 }
 
+.detail {
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .backBtn a {
   text-decoration: none;
   color: gray;

@@ -1,6 +1,35 @@
 // Import barba from modules
 import barba, { HookMethods } from '@barba/core'
 
+function enterDetail() {
+  const tl = gsap.timeline()
+
+  tl.from('.detail', {
+    y: '100%',
+    duration: 1,
+    ease: 'power3',
+  })
+}
+
+function leaveDetail() {
+  const tl = gsap.timeline()
+
+  tl.to('.detail', {
+    y: '100%',
+    duration: 3,
+    ease: 'power3',
+  })
+}
+
+function enterWork() {
+  const tl = gsap.timeline()
+
+  tl.from('.workContainer', {
+    opacity: 1,
+    duration: 1,
+    ease: 'power3',
+  })
+}
 // Import functions from functions.js
 import {
   transition,
@@ -98,9 +127,6 @@ barba.init({
       },
       once() {
         onceLoad()
-        hero()
-        wideCards()
-        singleCards()
       },
     },
     {
@@ -152,7 +178,7 @@ barba.init({
     {
       name: 'work',
       from: {
-        namespace: ['about', 'home', 'skills', 'detail'],
+        namespace: ['about', 'home', 'skills'],
       },
       to: {
         namespace: ['work'],
@@ -198,22 +224,39 @@ barba.init({
       },
     },
     {
-      name: 'detail',
+      name: 'toDetail',
+      sync: true,
       from: {
-        namespace: ['about', 'work', 'home', 'skills'],
+        namespace: ['work'],
       },
       to: {
         namespace: ['detail'],
       },
       async leave(data) {
-        transition()
         await delay(1000)
         data.current.container.remove()
       },
-      async afterLeave() {
-        ScrollTrigger.getAll().forEach((t) => t.kill())
+      enter(data) {
+        enterDetail()
       },
-      async enter(data) {},
+    },
+    {
+      name: 'toWork',
+      sync: true,
+      from: {
+        namespace: ['detail'],
+      },
+      to: {
+        namespace: ['work'],
+      },
+      async leave(data) {
+        leaveDetail()
+        await delay(1000)
+        // data.current.container.remove()
+      },
+      async enter(data) {
+        enterWork()
+      },
     },
   ],
 })
