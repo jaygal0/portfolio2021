@@ -1,6 +1,10 @@
 // Import barba from modules
 import barba, { HookMethods } from '@barba/core'
 
+// Import lightbox library
+import imageZoom from 'image-zoom'
+imageZoom()
+
 // Import functions from functions.js
 import {
   transition,
@@ -226,6 +230,8 @@ barba.init({
         // data.current.container.remove()
       },
       async enter(data) {
+        // FIXME Not sure what is going on here!
+        filterBtns()
         workHero()
         hero()
         enterWork()

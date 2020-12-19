@@ -6,6 +6,13 @@
   transition: all ease 0.3s;
 }
 
+@mixin imageZoom {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 30px;
+}
+
 @mixin cardHover {
   scale: 1.01;
   filter: drop-shadow(0 0.3rem 0.3rem rgba(0, 0, 0, 0.1));

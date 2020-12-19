@@ -1,42 +1,12 @@
 .kawaiiCards {
   grid-column: 3 / 7;
-  margin-top: 8rem;
+  margin-top: 2rem;
 
-  &__one {
-    background-image: url('/img/kawaiiBanner.png');
-    @include backgroundImage;
-  }
-
-  &__two {
+  &__info {
     background: $green;
   }
 
-  &__three {
+  &__skills {
     background: $blue;
-  }
-
-  &__four {
-    background-image: url('/img/card.jpg');
-    @include backgroundImage;
-  }
-  &__four {
-    background-image: url('/img/card.jpg');
-    @include backgroundImage;
-  }
-  &__five {
-    background-image: url('/img/card.jpg');
-    @include backgroundImage;
-  }
-  &__six {
-    background-image: url('/img/card.jpg');
-    @include backgroundImage;
-  }
-  &__seven {
-    background-image: url('/img/card.jpg');
-    @include backgroundImage;
-  }
-  &__eight {
-    background-image: url('/img/card.jpg');
-    @include backgroundImage;
   }
 }

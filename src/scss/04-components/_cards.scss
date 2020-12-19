@@ -11,6 +11,10 @@
     @include whiteBackgroundText;
     color: $black;
   }
+
+  &--img {
+    @include imageZoom;
+  }
 }
 
 .wideCardTextOnly {
@@ -67,6 +71,10 @@
   @include singleCardDimensions;
   color: white;
 
+  &--img {
+    @include imageZoom;
+  }
+
   &--title {
     @include cardTextTop;
   }
@@ -76,7 +84,6 @@
     transform: translateY(0);
     transition: all ease-out 0.7s;
   }
-
   &--text {
     opacity: 0;
     transform: translateY(10%);
