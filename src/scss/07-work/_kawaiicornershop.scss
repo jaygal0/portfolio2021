@@ -1,62 +1,42 @@
-.main__single {
-  grid-column: 1 / -1;
-  grid-row: 1;
-  display: grid;
-  grid-template-columns: minmax(150px, 1fr) repeat(6, 1fr) minmax(150px, 1fr);
-  background: $grey;
-}
-
-.detail {
-  z-index: 5;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-top: solid 2rem $greybar;
-}
-
-.backBtn a {
-  text-decoration: none;
-  color: gray;
-
-  &:hover {
-    color: $green;
-    cursor: pointer;
-  }
-}
-.backBtn {
-  @include centerColumn;
-  display: flex;
-  align-items: center;
-  margin: 4rem 0 0 0;
-  color: gray;
-  font-size: 1.8rem;
-  text-transform: capitalize;
-
-  &__arrow {
-    margin-right: 2rem;
-  }
-}
-
 .kawaiiCards {
   grid-column: 3 / 7;
   margin-top: 8rem;
 
-  &__first {
+  &__one {
     background-image: url('/img/kawaiiBanner.png');
     @include backgroundImage;
   }
 
-  &__second {
+  &__two {
     background: $green;
   }
 
-  &__third {
+  &__three {
     background: $blue;
   }
 
-  &__fourth {
+  &__four {
     background-image: url('/img/card.jpg');
     @include backgroundImage;
-    @include marginBottom;
+  }
+  &__four {
+    background-image: url('/img/card.jpg');
+    @include backgroundImage;
+  }
+  &__five {
+    background-image: url('/img/card.jpg');
+    @include backgroundImage;
+  }
+  &__six {
+    background-image: url('/img/card.jpg');
+    @include backgroundImage;
+  }
+  &__seven {
+    background-image: url('/img/card.jpg');
+    @include backgroundImage;
+  }
+  &__eight {
+    background-image: url('/img/card.jpg');
+    @include backgroundImage;
   }
 }
