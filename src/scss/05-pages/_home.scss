@@ -12,8 +12,8 @@
   &__title {
     margin: 7rem 0;
   }
-  &__first {
-    background-image: url('/img/card.jpg');
+  &__one {
+    background-image: url('/img/homeCardWork.svg');
     @include backgroundImage;
     @include transition;
 
@@ -22,8 +22,8 @@
     }
   }
 
-  &__second {
-    background-image: url('/img/work.jpg');
+  &__two {
+    background-image: url('/img/homeCardSkills.svg');
     @include backgroundImage;
     @include marginBottom;
     @include transition;
@@ -33,8 +33,8 @@
     }
   }
 
-  &__third {
-    background-image: url('/img/about.jpg');
+  &__three {
+    background-image: url('/img/homeCardAbout.svg');
     @include backgroundImage;
     @include marginBottom;
     @include transition;

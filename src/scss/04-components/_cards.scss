@@ -1,15 +1,27 @@
 .wideCard {
   @include wideCardDimensions;
 
+  &:hover > .wideCard--text {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all ease-out 0.7s;
+  }
+
   &--title {
     @include cardTextTop;
     color: white;
   }
 
   &--text {
+    // @include cardTextBottom;
+    // @include whiteBackgroundText;
+    color: white;
+    opacity: 0;
+    transform: translatey(10%);
+    transition: all ease-in 0.8s;
+    // text-shadow: 2px 2px 3px gray;
     @include cardTextBottom;
-    @include whiteBackgroundText;
-    color: $black;
+    @include noWhiteBackgroundText;
   }
 
   &--img {
@@ -86,7 +98,7 @@
   }
   &--text {
     opacity: 0;
-    transform: translateY(10%);
+    transform: translatey(10%);
     transition: all ease-in 0.8s;
     // text-shadow: 2px 2px 3px gray;
     @include cardTextBottom;
