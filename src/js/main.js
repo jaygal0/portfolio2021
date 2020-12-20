@@ -154,7 +154,7 @@ barba.init({
     {
       name: 'work',
       from: {
-        namespace: ['about', 'home', 'skills'],
+        namespace: ['about', 'home', 'skills', 'detail'],
       },
       to: {
         namespace: ['work'],
@@ -199,7 +199,7 @@ barba.init({
     },
     {
       name: 'toDetail',
-      sync: true,
+      // sync: true,
       from: {
         namespace: ['work'],
       },
@@ -207,34 +207,13 @@ barba.init({
         namespace: ['detail'],
       },
       async leave(data) {
-        await delay(1000)
-        data.current.container.remove()
-      },
-      enter(data) {
-        enterDetail()
-        borderColorsDetail()
-      },
-    },
-    {
-      name: 'toWork',
-      sync: true,
-      from: {
-        namespace: ['detail'],
-      },
-      to: {
-        namespace: ['work'],
-      },
-      async leave(data) {
-        leaveDetail()
-        await delay(1000)
-        // data.current.container.remove()
+        return gsap.to(data.current.container, {
+          opacity: 0,
+        })
       },
       async enter(data) {
-        // FIXME Not sure what is going on here!
-        filterBtns()
-        workHero()
-        hero()
-        enterWork()
+        enterDetail()
+        borderColorsDetail()
       },
     },
   ],

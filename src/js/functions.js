@@ -2,13 +2,24 @@
 export function transition() {
   const tl = gsap.timeline()
 
-  tl.to('.transition__box', {
-    duration: 1,
-    scaleX: 1,
-    transformOrigin: 'left',
-    stagger: 0.2,
-    ease: 'power3',
-  })
+  tl.fromTo(
+    '.transition__box',
+    {
+      duration: 2,
+      scaleX: 0,
+      skewX: 15,
+      x: '-10vw',
+    },
+    {
+      duration: 1,
+      scaleX: 1,
+      transformOrigin: 'left',
+      stagger: 0.2,
+      ease: 'power3',
+      skewX: 0,
+      x: 0,
+    }
+  )
 
   tl.to('.transition__box', {
     duration: 0.5,
@@ -93,7 +104,7 @@ export function onceLoad() {
 export function wideCards() {
   const tl = gsap.timeline({
     scrollTrigger: {
-      trigger: '.widecard',
+      trigger: '.wideCard',
       markers: false,
       start: 'top bottom',
       end: 'bottom top',
@@ -101,7 +112,7 @@ export function wideCards() {
     },
   })
 
-  tl.from('.widecard', {
+  tl.from('.wideCard', {
     duration: 1,
     opacity: 0,
     scale: 0.9,
