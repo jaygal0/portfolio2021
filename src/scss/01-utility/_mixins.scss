@@ -1,9 +1,33 @@
-@mixin transition {
-  transition: scale cubic-bezier(0.39, 0.04, 0.4, 1.25) 0.4s;
+@mixin backgroundImage {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-@mixin navTransition {
-  transition: all ease 0.3s;
+@mixin cardActive {
+  scale: 0.99;
+  filter: drop-shadow(0 0.3rem 0.3rem rgba(0, 0, 0, 0));
+}
+
+@mixin cardTextBottom {
+  position: absolute;
+  padding: 2.5rem 2rem;
+  bottom: 0;
+}
+
+@mixin cardTextTop {
+  position: absolute;
+  margin: 0 2rem;
+  top: 2rem;
+}
+
+@mixin cardHover {
+  scale: 1.01;
+  filter: drop-shadow(0 0.3rem 0.3rem rgba(0, 0, 0, 0.1));
+}
+
+@mixin centerColumn {
+  grid-column: 3 / 7;
 }
 
 @mixin imageZoom {
@@ -13,57 +37,12 @@
   border-radius: 30px;
 }
 
-@mixin cardHover {
-  scale: 1.01;
-  filter: drop-shadow(0 0.3rem 0.3rem rgba(0, 0, 0, 0.1));
-}
-
-@mixin cardActive {
-  scale: 0.99;
-  filter: drop-shadow(0 0.3rem 0.3rem rgba(0, 0, 0, 0));
-}
-
-@mixin wideCardDimensions {
-  width: 100%;
-  height: 400px;
-  border-radius: 30px;
-  margin: 2rem 0;
-  position: relative;
-}
-
-@mixin singleCardDimensions {
-  width: 49%;
-  height: 500px;
-  border-radius: 30px;
-  margin-bottom: 2rem;
-  position: relative;
-}
-
 @mixin marginBottom {
   margin-bottom: 15rem;
 }
 
-@mixin backgroundImage {
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-@mixin cardTextTop {
-  position: absolute;
-  margin: 0 2rem;
-  top: 2rem;
-}
-
-@mixin cardTextBottom {
-  position: absolute;
-  padding: 2.5rem 2rem;
-  bottom: 0;
-}
-
-@mixin whiteBackgroundText {
-  background: white;
-  border-bottom-right-radius: 30px;
-  border-bottom-left-radius: 30px;
+@mixin navTransition {
+  transition: all ease 0.3s;
 }
 
 @mixin noWhiteBackgroundText {
@@ -71,8 +50,12 @@
   border-bottom-left-radius: 30px;
 }
 
-@mixin centerColumn {
-  grid-column: 3 / 7;
+@mixin singleCardDimensions {
+  width: 49%;
+  height: 500px;
+  border-radius: 30px;
+  margin: 1rem 0;
+  position: relative;
 }
 
 @mixin skillsLevel {
@@ -95,6 +78,24 @@
   bottom: 0;
   border-radius: 30px;
   background: $green;
+}
+
+@mixin transition {
+  transition: scale cubic-bezier(0.39, 0.04, 0.4, 1.25) 0.4s;
+}
+
+@mixin wideCardDimensions {
+  width: 100%;
+  height: 400px;
+  border-radius: 30px;
+  margin: 1rem 0;
+  position: relative;
+}
+
+@mixin whiteBackgroundText {
+  background: white;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
 }
 
 /* Media Query Manager

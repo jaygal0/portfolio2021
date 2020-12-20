@@ -1,3 +1,97 @@
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.singleCard {
+  @include singleCardDimensions;
+  color: white;
+
+  &__imageFit {
+    @include singleCardDimensions;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $green;
+
+    &--img {
+      display: flex;
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+
+  &--img {
+    @include imageZoom;
+  }
+
+  &--title {
+    @include cardTextTop;
+  }
+
+  &:hover > .singleCard--text {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all ease-out 0.7s;
+  }
+  &--text {
+    opacity: 0;
+    transform: translatey(10%);
+    transition: all ease-in 0.8s;
+    // text-shadow: 2px 2px 3px gray;
+    @include cardTextBottom;
+    @include noWhiteBackgroundText;
+  }
+}
+
+.singleCardHeader {
+  @include singleCardDimensions;
+  &--h2 {
+    font-size: 3.5rem;
+    color: white;
+    margin: 5rem 2rem;
+    line-height: 6rem;
+  }
+}
+
+.skillsbox {
+  display: grid;
+  grid-template-rows: min-content min-content;
+  align-items: center;
+  margin: 3rem 0;
+  height: auto;
+
+  &__container {
+    display: flex;
+    grid-row: 1;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+  &__img {
+    align-items: center;
+    width: 12%;
+    border-radius: 20px;
+    margin-right: 2rem;
+  }
+  &__textbox {
+    flex-grow: 2;
+
+    &--h4 {
+    }
+
+    &--h2 {
+      margin-bottom: 1rem;
+    }
+  }
+  &__line {
+    grid-row: 2;
+    color: $greybar;
+    height: 1px;
+    opacity: 0.2;
+  }
+}
+
 .wideCard {
   @include wideCardDimensions;
 
@@ -5,6 +99,22 @@
     opacity: 1;
     transform: translateY(0);
     transition: all ease-out 0.7s;
+  }
+
+  &__imageFit {
+    @include wideCardDimensions;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $green;
+
+    &--img {
+      object-fit: cover;
+      display: flex;
+      width: 90%;
+      height: 90%;
+      margin: 0 auto;
+    }
   }
 
   &--title {
@@ -74,87 +184,15 @@
 
     &:hover {
       text-decoration: underline;
-      color: rgb(207, 207, 207);
     }
   }
 }
 
-.singleCard {
-  @include singleCardDimensions;
-  color: white;
-
-  &--img {
-    @include imageZoom;
-  }
-
-  &--title {
-    @include cardTextTop;
-  }
-
-  &:hover > .singleCard--text {
-    opacity: 1;
-    transform: translateY(0);
-    transition: all ease-out 0.7s;
-  }
-  &--text {
-    opacity: 0;
-    transform: translatey(10%);
-    transition: all ease-in 0.8s;
-    // text-shadow: 2px 2px 3px gray;
-    @include cardTextBottom;
-    @include noWhiteBackgroundText;
-  }
+.endCard {
+  @include marginBottom;
 }
 
-.singleCardHeader {
-  @include singleCardDimensions;
-  &--h2 {
-    font-size: 3.5rem;
-    color: white;
-    margin: 5rem 2rem;
-    line-height: 6rem;
-  }
-}
-
-.cards {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.skillsbox {
-  display: grid;
-  grid-template-rows: min-content min-content;
-  align-items: center;
-  margin: 3rem 0;
-  height: auto;
-
-  &__container {
-    display: flex;
-    grid-row: 1;
-    align-items: center;
-    margin-bottom: 3rem;
-  }
-  &__img {
-    align-items: center;
-    width: 12%;
-    border-radius: 20px;
-    margin-right: 2rem;
-  }
-  &__textbox {
-    flex-grow: 2;
-
-    &--h4 {
-    }
-
-    &--h2 {
-      margin-bottom: 1rem;
-    }
-  }
-  &__line {
-    grid-row: 2;
-    color: $greybar;
-    height: 1px;
-    opacity: 0.2;
-  }
+// To allow the image zoom fill the screen
+.image-zoom-zoomed {
+  border-radius: 0;
 }

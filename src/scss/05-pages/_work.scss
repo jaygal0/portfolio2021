@@ -33,18 +33,17 @@
   @include centerColumn;
   margin-top: 5rem;
 
-  &__first {
+  &__kawaiicornershop {
     background-image: url('/img/kawaiiInstagram1.png');
     @include backgroundImage;
     @include transition;
-    background-position: center;
-
     &:hover {
       @include cardHover;
     }
   }
-  &__second {
-    background-image: url('/img/card.jpg');
+
+  &__vol {
+    background-image: url('/img/volBanner.jpg');
     @include backgroundImage;
     @include transition;
 
@@ -52,8 +51,8 @@
       @include cardHover;
     }
   }
-  &__third {
-    background-image: url('/img/card.jpg');
+  &__galiway {
+    background-image: url('/img/galiwayBanner.png');
     @include backgroundImage;
     @include transition;
 

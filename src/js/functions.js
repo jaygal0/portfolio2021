@@ -118,7 +118,7 @@ export function wideCards() {
     scale: 0.9,
     y: '19%',
     ease: 'elastic',
-    stagger: 0.5,
+    stagger: 0.2,
   })
 }
 
@@ -140,7 +140,7 @@ export function singleCards() {
     scale: 0.9,
     y: '19%',
     ease: 'elastic',
-    stagger: 0.5,
+    stagger: 0.2,
   })
 }
 

@@ -1,0 +1,40 @@
+.volCards {
+  grid-column: 3 / 7;
+  margin-top: 2rem;
+
+  &__info {
+    background: $green;
+  }
+
+  &__skills {
+    background: $blue;
+  }
+
+  &__headerOne {
+    background: $blue;
+  }
+
+  &--quiz {
+    width: 70%;
+  }
+
+  &--deck {
+    width: 65%;
+  }
+
+  &__gifBackground {
+    background: $green;
+  }
+
+  &__gif {
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    align-content: center;
+
+    &--width {
+      width: 30%;
+      object-fit: contain;
+    }
+  }
+}
