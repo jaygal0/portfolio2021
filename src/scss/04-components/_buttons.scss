@@ -24,3 +24,22 @@
   background: $green;
   color: white;
 }
+
+.bottomBtns {
+  @include centerColumn;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 7rem 0;
+
+  &__link {
+    color: gray;
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

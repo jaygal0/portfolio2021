@@ -69,8 +69,8 @@
       @include cardHover;
     }
   }
-  &__fifth {
-    background-image: url('/img/card.jpg');
+  &__reload {
+    background-image: url('/img/reloadLogo.png');
     @include backgroundImage;
     @include transition;
 

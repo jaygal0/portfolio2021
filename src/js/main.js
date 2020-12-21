@@ -9,9 +9,6 @@ imageZoom()
 import {
   transition,
   enterDetail,
-  borderColorsDetail,
-  leaveDetail,
-  enterWork,
   onceLoad,
   wideCards,
   singleCards,
@@ -27,6 +24,14 @@ import {
   skillsHero,
 } from './heroAnimation.js'
 
+import {
+  galiwayBorder,
+  kawaiiBorder,
+  volBorder,
+  photographyBorder,
+  reloadBorder,
+} from './borderColors.js'
+
 // register GSAP ScrollTrigger
 gsap.registerPlugin(ScrollTrigger)
 
@@ -40,7 +45,7 @@ barba.hooks.once(() => {
 
 // Initialise Barba
 barba.init({
-  // debug: true,
+  debug: true,
   sync: true,
   transitions: [
     {
@@ -102,7 +107,11 @@ barba.init({
       },
       once() {
         onceLoad()
-        borderColorsDetail()
+        kawaiiBorder()
+        volBorder()
+        galiwayBorder()
+        photographyBorder()
+        reloadBorder()
       },
     },
     {
@@ -213,7 +222,32 @@ barba.init({
       },
       async enter(data) {
         enterDetail()
-        borderColorsDetail()
+        kawaiiBorder()
+        volBorder()
+        galiwayBorder()
+        photographyBorder()
+        reloadBorder()
+      },
+    },
+    {
+      name: 'detailToDetail',
+      from: {
+        namespace: ['detail'],
+      },
+      to: {
+        namespace: ['detail'],
+      },
+      async leave(data) {
+        transition()
+        await delay(1000)
+        data.current.container.remove()
+      },
+      async enter(data) {
+        kawaiiBorder()
+        volBorder()
+        galiwayBorder()
+        photographyBorder()
+        reloadBorder()
       },
     },
   ],

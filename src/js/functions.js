@@ -41,55 +41,6 @@ export function enterDetail() {
   })
 }
 
-export function borderColorsDetail() {
-  let colors = [
-      '#ffd847',
-      '#6c804a',
-      '#e8796b',
-      '#0079a6',
-      '#e0b07f',
-      '#888891',
-    ],
-    duration = 5,
-    gap = 0.5
-
-  let tlHome = gsap.timeline({
-    repeat: -1,
-    repeatRefresh: true,
-  })
-
-  colors.forEach(function (color, index) {
-    tlHome.to(
-      '.detail',
-      {
-        duration: 5,
-        borderTopColor: color,
-      },
-      (duration + gap) * index
-    )
-  })
-}
-
-export function leaveDetail() {
-  const tl = gsap.timeline()
-
-  tl.to('.detail', {
-    y: '100%',
-    duration: 3,
-    ease: 'power3',
-  })
-}
-
-export function enterWork() {
-  const tl = gsap.timeline()
-
-  tl.from('.workContainer', {
-    opacity: 1,
-    duration: 1,
-    ease: 'power3',
-  })
-}
-
 export function onceLoad() {
   const tl = gsap.timeline()
 
