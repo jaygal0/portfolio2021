@@ -14,19 +14,24 @@ export function videoLightbox() {
       })
     })
   } else if (galiway) {
-    const vid1 = document.getElementById('vid1')
-    const vid2 = document.getElementById('vid2')
+    const vid1 = document.querySelectorAll('.video1')
+    const vid2 = document.querySelectorAll('.video2')
 
-    vid1.addEventListener('click', () => {
-      BigPicture({
-        el: vid1,
-        ytSrc: 'yNUm50yJo34',
+    vid1.forEach((e) => {
+      e.addEventListener('click', () => {
+        BigPicture({
+          el: e,
+          ytSrc: 'yNUm50yJo34',
+        })
       })
     })
-    vid2.addEventListener('click', () => {
-      BigPicture({
-        el: vid2,
-        ytSrc: 'SiuX6ZRpbs0',
+
+    vid2.forEach((e) => {
+      e.addEventListener('click', () => {
+        BigPicture({
+          el: e,
+          ytSrc: 'SiuX6ZRpbs0',
+        })
       })
     })
   }
