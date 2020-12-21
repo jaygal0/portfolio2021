@@ -34,6 +34,7 @@
   margin-top: 5rem;
 
   &__kawaiicornershop {
+    color: $black;
     background-image: url('/img/kawaiiInstagram1.png');
     @include backgroundImage;
     @include transition;
@@ -43,6 +44,7 @@
   }
 
   &__vol {
+    color: $black;
     background-image: url('/img/volBanner.jpg');
     @include backgroundImage;
     @include transition;
@@ -52,6 +54,7 @@
     }
   }
   &__galiway {
+    color: $black;
     background-image: url('/img/galiwayBanner.png');
     @include backgroundImage;
     @include transition;

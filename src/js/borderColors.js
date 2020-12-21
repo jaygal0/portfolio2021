@@ -1,7 +1,12 @@
-export function kawaiiBorder() {
+export function borderColors() {
   const kawaii = document.getElementById('kawaii')
+  const vol = document.getElementById('vol')
+  const galiway = document.getElementById('galiway')
+  const photography = document.getElementById('photography')
+  const reload = document.getElementById('reload')
+
   if (kawaii) {
-    let colors = ['#f7f0e8', '#ef598f', '#b3d7f2', '#f5ccd4'],
+    let colors = ['#ef598f', '#b3d7f2', '#f5ccd4', '#f7f0e8'],
       duration = 3,
       gap = 0.5
 
@@ -20,12 +25,7 @@ export function kawaiiBorder() {
         (duration + gap) * index
       )
     })
-  }
-}
-
-export function volBorder() {
-  const vol = document.getElementById('vol')
-  if (vol) {
+  } else if (vol) {
     let colors = ['#ffe47b', '#2b2f32'],
       duration = 3,
       gap = 0.5
@@ -45,12 +45,7 @@ export function volBorder() {
         (duration + gap) * index
       )
     })
-  }
-}
-
-export function galiwayBorder() {
-  const galiway = document.getElementById('galiway')
-  if (galiway) {
+  } else if (galiway) {
     let colors = ['#253628', '#49654C', '#8AA989', '#EBEBE9'],
       duration = 3,
       gap = 0.5
@@ -70,12 +65,7 @@ export function galiwayBorder() {
         (duration + gap) * index
       )
     })
-  }
-}
-
-export function photographyBorder() {
-  const photography = document.getElementById('photography')
-  if (photography) {
+  } else if (photography) {
     let colors = ['#253628', '#49654C', '#8AA989', '#EBEBE9'],
       duration = 3,
       gap = 0.5
@@ -95,12 +85,7 @@ export function photographyBorder() {
         (duration + gap) * index
       )
     })
-  }
-}
-
-export function reloadBorder() {
-  const reload = document.getElementById('reload')
-  if (reload) {
+  } else if (reload) {
     let colors = ['#2d2d2f', '#f09220', '#ffffff'],
       duration = 3,
       gap = 0.5

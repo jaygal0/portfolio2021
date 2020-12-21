@@ -47,11 +47,17 @@
 
 .singleCardHeader {
   @include singleCardDimensions;
+  display: flex;
+  flex-direction: column;
   &--h2 {
     font-size: 3.5rem;
     color: white;
-    margin: 5rem 2rem;
+    margin: 3rem 2rem;
     line-height: 6rem;
+  }
+  &--magnify {
+    width: 7rem;
+    margin: 0 auto;
   }
 }
 
@@ -89,6 +95,22 @@
     color: $greybar;
     height: 1px;
     opacity: 0.2;
+  }
+}
+
+.videoCard {
+  position: relative;
+  &--playButton {
+    z-index: 1;
+    position: absolute;
+    width: 9rem;
+    top: 42%;
+    left: 42%;
+    fill: white;
+    &:hover > .playButtonHover {
+      fill: $green;
+      cursor: pointer;
+    }
   }
 }
 
@@ -161,12 +183,12 @@
   &--images {
     display: flex;
     justify-content: space-around;
-    height: 20rem;
+    height: 18rem;
   }
 
   &--apps {
-    width: 8rem;
-    margin: 4rem 0;
+    width: 10rem;
+    margin-bottom: 2rem;
   }
 
   &--skills {

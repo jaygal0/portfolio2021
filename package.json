@@ -38,6 +38,7 @@
   "dependencies": {
     "@barba/core": "^2.8.0",
     "@barba/css": "^2.1.15",
+    "bigpicture": "^2.5.3",
     "image-zoom": "github:mvoloskov/image-zoom",
     "moment": "^2.29.1",
     "reset-css": "^5.0.1"

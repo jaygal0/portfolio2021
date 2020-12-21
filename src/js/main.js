@@ -24,13 +24,9 @@ import {
   skillsHero,
 } from './heroAnimation.js'
 
-import {
-  galiwayBorder,
-  kawaiiBorder,
-  volBorder,
-  photographyBorder,
-  reloadBorder,
-} from './borderColors.js'
+import { borderColors } from './borderColors.js'
+
+import { videoLightbox } from './videoLightbox.js'
 
 // register GSAP ScrollTrigger
 gsap.registerPlugin(ScrollTrigger)
@@ -45,7 +41,7 @@ barba.hooks.once(() => {
 
 // Initialise Barba
 barba.init({
-  debug: true,
+  // debug: true,
   sync: true,
   transitions: [
     {
@@ -107,11 +103,8 @@ barba.init({
       },
       once() {
         onceLoad()
-        kawaiiBorder()
-        volBorder()
-        galiwayBorder()
-        photographyBorder()
-        reloadBorder()
+        borderColors()
+        videoLightbox()
       },
     },
     {
@@ -208,7 +201,6 @@ barba.init({
     },
     {
       name: 'toDetail',
-      // sync: true,
       from: {
         namespace: ['work'],
       },
@@ -222,11 +214,8 @@ barba.init({
       },
       async enter(data) {
         enterDetail()
-        kawaiiBorder()
-        volBorder()
-        galiwayBorder()
-        photographyBorder()
-        reloadBorder()
+        borderColors()
+        videoLightbox()
       },
     },
     {
@@ -243,11 +232,8 @@ barba.init({
         data.current.container.remove()
       },
       async enter(data) {
-        kawaiiBorder()
-        volBorder()
-        galiwayBorder()
-        photographyBorder()
-        reloadBorder()
+        borderColors()
+        videoLightbox()
       },
     },
   ],
