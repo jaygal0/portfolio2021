@@ -1,5 +1,6 @@
 node_modules/
 ai/
+pr/
 package-lock.json
 .DS_Store
 .vscode

@@ -66,7 +66,7 @@ export function borderColors() {
       )
     })
   } else if (photography) {
-    let colors = ['#253628', '#49654C', '#8AA989', '#EBEBE9'],
+    let colors = ['#e38a2c', '#2299bb', '#427f95', '#dbe0eb'],
       duration = 3,
       gap = 0.5
 

@@ -5,12 +5,34 @@ export function videoLightbox() {
   const reload = document.getElementById('reload')
   const galiway = document.getElementById('galiway')
   if (reload) {
-    const element = document.getElementById('element')
+    const vid1 = document.querySelectorAll('.video1')
+    const vid2 = document.querySelectorAll('.video2')
+    const vid3 = document.querySelectorAll('.video3')
 
-    element.addEventListener('click', () => {
-      BigPicture({
-        el: element,
-        ytSrc: 'z_PeaHVcohg',
+    vid1.forEach((e) => {
+      e.addEventListener('click', () => {
+        BigPicture({
+          el: e,
+          ytSrc: 'bZStXj9B2_U',
+        })
+      })
+    })
+
+    vid2.forEach((e) => {
+      e.addEventListener('click', () => {
+        BigPicture({
+          el: e,
+          ytSrc: 'PaoZHxYxK90',
+        })
+      })
+    })
+
+    vid3.forEach((e) => {
+      e.addEventListener('click', () => {
+        BigPicture({
+          el: e,
+          ytSrc: 'Gr3ZH2x68OY',
+        })
       })
     })
   } else if (galiway) {
