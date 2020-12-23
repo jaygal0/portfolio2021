@@ -1,0 +1,30 @@
+.crouchinbunnyCards {
+  grid-column: 3 / 7;
+  margin-top: 2rem;
+
+  &__info {
+    background: $green;
+  }
+
+  &__skills {
+    background: $blue;
+  }
+
+  &__header {
+    background: $green;
+  }
+
+  &--panels {
+    width: 90%;
+    margin: 2rem;
+  }
+
+  &--gif1 {
+    background-image: url('/img/crouchinStart.gif');
+    background-size: cover;
+  }
+  &--gif2 {
+    background-image: url('/img/crouchinEnd.gif');
+    background-size: cover;
+  }
+}

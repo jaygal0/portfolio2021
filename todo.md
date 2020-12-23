@@ -1,4 +1,4 @@
-TODO Complete Photography layout
-TODO Complete Reload layout
-TODO Complete Portfolio work one by one
+TODO Add Bind
+TODO Add Input
+TODO Add video projects ?
 TODO Figure out loading screen?

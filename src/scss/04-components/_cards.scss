@@ -7,6 +7,7 @@
 .singleCard {
   @include singleCardDimensions;
   color: white;
+  position: relative;
 
   &__imageFit {
     @include singleCardDimensions;
@@ -14,12 +15,22 @@
     justify-content: center;
     align-items: center;
     background: $green;
+    position: relative;
 
     &--img {
       display: flex;
       width: 90%;
       margin: 0 auto;
     }
+  }
+
+  &__magnifyIcon {
+    width: 3rem;
+    z-index: 2;
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    margin: 2rem;
   }
 
   &--img {
