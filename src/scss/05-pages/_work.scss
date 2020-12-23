@@ -90,8 +90,8 @@
       @include cardHover;
     }
   }
-  &__seventh {
-    background-image: url('/img/card.jpg');
+  &__input {
+    background-image: url('/img/inputBanner.png');
     @include backgroundImage;
     @include marginBottom;
     @include transition;
@@ -100,7 +100,7 @@
       @include cardHover;
     }
   }
-  &__eigth {
+  &__bind {
     background-image: url('/img/card.jpg');
     @include backgroundImage;
     @include transition;

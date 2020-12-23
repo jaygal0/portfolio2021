@@ -1,4 +1,7 @@
-TODO Add Bind
-TODO Add Input
+TODO Design Iput Userflow
+TODO Finalise Bind icons
+TODO Finalise Bind logo
+TODO Finalise Bind color palette
+TODO Design Bind Userflow
 TODO Add video projects ?
-TODO Figure out loading screen?
+TODO Figure out loading/preloaders ?

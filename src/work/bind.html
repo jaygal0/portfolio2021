@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/app.css" />
+    <script src="https://use.fontawesome.com/2c13c7a315.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"
+    ></script>
+    <script defer src="../assets/bundle.js"></script>
+    <title>Bind</title>
+  </head>
+  <body data-barba="wrapper">
+    <div class="transition">
+      <div class="transition__box"><img src="../img/logo.svg" alt="" /></div>
+    </div>
+    <div
+      data-barba="container"
+      data-barba-namespace="detail"
+      id="bind"
+      class="detail container"
+    >
+      <main class="main__detail">
+        <div class="backBtn">
+          <a href="../work.html">
+            <span class="backBtn__arrow">&lt;</span> back to work
+          </a>
+        </div>
+        <section class="bindCards cards">
+          <div class="wideCard">
+            <img
+              src="../img/magnifyingGlass.svg"
+              alt=""
+              class="singleCard__magnifyIcon"
+            />
+            <img
+              src="../img/inputBanner.png"
+              alt="hello"
+              class="wideCard--img"
+            />
+          </div>
+          <div id="element" class="bindCards__info wideCardTextOnly">
+            <div class="wideCardTextOnly--textbox">
+              <h4 class="wideCardTextOnly--h4">Lorem ipsum.</h4>
+              <h2 class="wideCardTextOnly--h2">bind</h2>
+              <p class="wideCardTextOnly--paragraph">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui
+                veniam corporis iusto doloremque, dicta eum hic accusamus
+                voluptatibus iste unde cum accusantium et voluptas, in placeat
+                assumenda optio facere! Officia minima vero rem molestiae esse
+                dicta quod quae nemo quisquam.
+              </p>
+            </div>
+          </div>
+          <div class="bindCards__skills wideCardTextOnly">
+            <div class="wideCardTextOnly--textbox">
+              <h4 class="wideCardTextOnly--h4">skills</h4>
+              <h2 class="wideCardTextOnly--h2">a list of apps</h2>
+              <p class="wideCardTextOnly--paragraph">
+                Below is a list of apps I used in order to complete the project.
+                To view my entire skillset along with my experience for each
+                app, click on the link below.
+              </p>
+              <div class="wideCardTextOnly--images">
+                <img
+                  src="/img/figma.svg"
+                  alt=""
+                  class="wideCardTextOnly--apps"
+                />
+                <img
+                  src="/img/html.svg"
+                  alt=""
+                  class="wideCardTextOnly--apps"
+                />
+                <img src="/img/css.svg" alt="" class="wideCardTextOnly--apps" />
+                <img src="/img/js.svg" alt="" class="wideCardTextOnly--apps" />
+                <img
+                  src="/img/code.svg"
+                  alt=""
+                  class="wideCardTextOnly--apps"
+                />
+              </div>
+              <div class="wideCardTextOnly--skills">
+                <a href="../skills.html">view entire skillset &gt;</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="bindCards__header singleCardHeader">
+            <h5 class="singleCardHeader--h2">
+              Want to see the assets up close and personal? Click on the cards
+              for them to expand.
+            </h5>
+            <img
+              class="singleCardHeader--magnify"
+              src="../img/magnifyingGlass.svg"
+              alt=""
+            />
+          </div>
+          <div class="bindCards__branding singleCard">
+            <div class="singleCard--title">
+              <h4 class="singleCard--h4">branding</h4>
+              <h2 class="singleCard--h2">palette</h2>
+            </div>
+
+            <div class="singleCard__paletteContainer">
+              <div
+                class="singleCard__paletteContainer--palette bindCards__palette--1"
+              >
+                &#35;227C9D
+              </div>
+              <div
+                class="singleCard__paletteContainer--palette bindCards__palette--2"
+              >
+                &#35;31C8B9
+              </div>
+              <div
+                class="singleCard__paletteContainer--palette bindCards__palette--3"
+              >
+                &#35;FE6D73
+              </div>
+              <div
+                class="singleCard__paletteContainer--palette bindCards__palette--4"
+              >
+                &#35;FEF9EF
+              </div>
+              <div
+                class="singleCard__paletteContainer--palette bindCards__palette--5"
+              >
+                &#35;FFCB77
+              </div>
+              <div
+                class="singleCard__paletteContainer--palette bindCards__palette--6"
+              >
+                &#35;C9C9C9
+              </div>
+            </div>
+          </div>
+          <div class="bindCards__skills wideCardTextOnly">
+            <img
+              src="../img/magnifyingGlass.svg"
+              alt=""
+              class="singleCard__magnifyIcon"
+            />
+            <div class="wideCardTextOnly--textbox">
+              <h4 class="wideCardTextOnly--h4">UX/UI</h4>
+              <h2 class="wideCardTextOnly--h2">user flow</h2>
+              <img
+                class="bindCards--image"
+                src="../img/kawaiiBanner.png"
+                alt="hello"
+              />
+            </div>
+          </div>
+          <div class="bindCards__skills wideCardTextOnly">
+            <img
+              src="../img/magnifyingGlass.svg"
+              alt=""
+              class="singleCard__magnifyIcon"
+            />
+            <div class="wideCardTextOnly--textbox">
+              <h4 class="wideCardTextOnly--h4">UX/UI</h4>
+              <h2 class="wideCardTextOnly--h2">figma designs</h2>
+              <img
+                class="bindCards--image"
+                src="../img/kawaiiBanner.png"
+                alt="hello"
+              />
+            </div>
+          </div>
+          <div class="bindCards__skills wideCardTextOnly">
+            <img
+              src="../img/magnifyingGlass.svg"
+              alt=""
+              class="singleCard__magnifyIcon"
+            />
+            <div class="wideCardTextOnly--textbox">
+              <h4 class="wideCardTextOnly--h4">front-end</h4>
+              <h2 class="wideCardTextOnly--h2">working prototype</h2>
+              <img
+                class="bindCards--image"
+                src="../img/kawaiiBanner.png"
+                alt="hello"
+              />
+            </div>
+          </div>
+
+          <div class="bottomBtns">
+            <div class="bottomBtns__left">
+              <a class="bottomBtns__link" href="../work/vol.html"
+                >&lt; prev: project</a
+              >
+            </div>
+
+            <div class="bottomBtns__middle">
+              <a class="bottomBtns__link" href="#">&#94; back to top</a>
+            </div>
+
+            <div class="bottomBtns__right">
+              <a class="bottomBtns__link" href="../work/vol.html"
+                >next: project &gt;</a
+              >
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

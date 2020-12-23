@@ -9,6 +9,28 @@
   color: white;
   position: relative;
 
+  &__paletteContainer {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25%;
+
+    &--palette {
+      margin: 2rem;
+      height: 10rem;
+      width: 10rem;
+      color: white;
+      background: red;
+      border-radius: 1.5rem;
+      text-align: center;
+      font-weight: bold;
+      vertical-align: center;
+      line-height: 9rem;
+    }
+  }
+
   &__imageFit {
     @include singleCardDimensions;
     display: flex;

@@ -1,0 +1,55 @@
+.inputCards {
+  grid-column: 3 / 7;
+  margin-top: 2rem;
+
+  &__info {
+    background: $green;
+  }
+
+  &__skills {
+    background: $blue;
+  }
+
+  &__header {
+    background: $green;
+  }
+
+  &__branding {
+    background: $green;
+  }
+
+  &__palette {
+    &--1 {
+      background: #227c9d;
+    }
+    &--2 {
+      background: #31c8b9;
+    }
+    &--3 {
+      background: #fe6d73;
+    }
+    &--4 {
+      background: #fef9ef;
+      color: gray;
+    }
+    &--5 {
+      background: #ffcb77;
+    }
+    &--6 {
+      background: #c9c9c9;
+    }
+  }
+  &__image {
+    display: flex;
+    align-self: center;
+    width: 60%;
+    margin: 0 auto;
+
+    &--prototype {
+      display: flex;
+      align-self: center;
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
+}
