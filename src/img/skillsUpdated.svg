@@ -16,10 +16,6 @@
   </g>
   <g id="computerVideo">
     <rect x="573.06" y="422.48" width="686.81" height="384.12" rx="6.83" style="fill: #68c4b8"/>
-    <g>
-      <rect x="564.66" y="846.06" width="419.29" height="13.11" rx="4.63" style="fill: #7a7a7a"/>
-      <rect x="564.66" y="868.06" width="163.79" height="13.11" rx="4.63" style="fill: #7a7a7a"/>
-    </g>
   </g>
   <g id="calendar">
     <rect x="1743.09" y="183.2" width="272.31" height="340.03" style="fill: #fff;stroke: #fff;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10.8387608326332px"/>
