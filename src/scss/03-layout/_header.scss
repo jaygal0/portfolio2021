@@ -43,12 +43,8 @@ header {
     overflow: hidden;
 
     &:hover {
-      color: grey;
+      color: $grey;
       transition: all ease 1s;
-    }
-
-    &:active {
-      color: red;
     }
 
     &:hover::after {
@@ -56,14 +52,14 @@ header {
       width: 100%;
       bottom: -40%;
       left: 0;
-      border: red 3px solid;
+      border: $red 3px solid;
       border-radius: 30px;
       position: absolute;
       animation: nav 1s;
     }
 
     &--active {
-      color: $blue;
+      color: $darkGreen;
       padding-bottom: 3px;
     }
   }

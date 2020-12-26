@@ -287,7 +287,6 @@ export function workHero() {
       },
       {
         scale: 1.05,
-        fill: 'blue',
         yoyo: true,
         repeat: -1,
         duration: 1,
@@ -376,7 +375,7 @@ export function workHero() {
 
     blue.addEventListener('click', () => {
       colorChange.forEach((e) => {
-        e.style.fill = '#0C3D5E'
+        e.style.fill = '#72a5c4'
         gsap.fromTo(
           '#changeColor',
           {
