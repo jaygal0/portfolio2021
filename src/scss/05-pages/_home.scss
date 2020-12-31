@@ -26,7 +26,6 @@
   &__two {
     background-image: url('/img/homeCardSkills.svg');
     @include backgroundImage;
-    @include marginBottom;
     @include transition;
 
     &:hover {
@@ -37,7 +36,6 @@
   &__three {
     background-image: url('/img/homeCardAbout.svg');
     @include backgroundImage;
-    @include marginBottom;
     @include transition;
 
     &:hover {

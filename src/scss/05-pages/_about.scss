@@ -47,6 +47,5 @@
   &__fourth {
     background-image: url('/img/card.jpg');
     @include backgroundImage;
-    @include marginBottom;
   }
 }

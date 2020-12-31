@@ -6,6 +6,7 @@ export function borderColors() {
   const reload = document.getElementById('reload')
   const crouchinbunny = document.getElementById('crouchinbunny')
   const input = document.getElementById('input')
+  const bind = document.getElementById('bind')
 
   if (kawaii) {
     let colors = ['#ef598f', '#b3d7f2', '#f5ccd4', '#f7f0e8'],
@@ -136,6 +137,26 @@ export function borderColors() {
         '#FFCB77',
         '#C9C9C9',
       ],
+      duration = 3,
+      gap = 0.5
+
+    let tlHome = gsap.timeline({
+      repeat: -1,
+      repeatRefresh: true,
+    })
+
+    colors.forEach(function (color, index) {
+      tlHome.to(
+        '.detail',
+        {
+          duration: 3,
+          borderTopColor: color,
+        },
+        (duration + gap) * index
+      )
+    })
+  } else if (bind) {
+    let colors = ['#83E7FD', '#FFFBEB', '#FCD577', '#FCA390', '#1E1C1C'],
       duration = 3,
       gap = 0.5
 

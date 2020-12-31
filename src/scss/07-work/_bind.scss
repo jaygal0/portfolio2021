@@ -20,29 +20,28 @@
 
   &__palette {
     &--1 {
-      background: #227c9d;
+      background: #fffbeb;
+      color: $black;
     }
     &--2 {
-      background: #31c8b9;
+      background: #83e7fd;
+      color: $black;
     }
     &--3 {
-      background: #fe6d73;
+      background: #fcd577;
+      color: $black;
     }
     &--4 {
-      background: #fef9ef;
-      color: gray;
+      background: #fca390;
     }
     &--5 {
-      background: #ffcb77;
-    }
-    &--6 {
-      background: #c9c9c9;
+      background: #1e1c1c;
     }
   }
-  &--image {
+  &__image {
     display: flex;
     align-self: center;
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
   }
 }

@@ -1,4 +1,5 @@
 node_modules/
+dist/
 ai/
 pr/
 package-lock.json

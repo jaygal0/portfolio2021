@@ -54,8 +54,8 @@
     }
   }
   &__galiway {
+    background-image: url('/img/galiwayLogo.svg');
     color: $black;
-    background-image: url('/img/galiwayBanner.png');
     @include backgroundImage;
     @include transition;
 
@@ -65,6 +65,7 @@
   }
   &__photography {
     background-image: url('/img/photosEbony.jpg');
+    color: $black;
     @include backgroundImage;
     @include transition;
 
@@ -72,8 +73,12 @@
       @include cardHover;
     }
   }
+  .photography__text {
+    color: white;
+  }
+
   &__reload {
-    background-image: url('/img/reloadLogo.png');
+    background-image: url('/img/reloadLogo.svg');
     @include backgroundImage;
     @include transition;
 
@@ -82,7 +87,7 @@
     }
   }
   &__crouchinbunny {
-    background-image: url('/img/crouchinBanner.png');
+    background-image: url('/img/crouchinbunnyLogo.svg');
     @include backgroundImage;
     @include transition;
 
@@ -91,9 +96,8 @@
     }
   }
   &__input {
-    background-image: url('/img/inputBanner.png');
+    background-image: url('/img/inputBanner.svg');
     @include backgroundImage;
-    @include marginBottom;
     @include transition;
 
     &:hover {
@@ -102,6 +106,7 @@
   }
   &__bind {
     background-image: url('/img/bindBanner.svg');
+    color: $black;
     @include backgroundImage;
     @include transition;
 
