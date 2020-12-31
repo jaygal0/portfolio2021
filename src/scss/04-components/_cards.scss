@@ -93,6 +93,28 @@
   }
 }
 
+.singleCardInfo {
+  @include singleCardDimensions;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem;
+
+  &__text {
+    font-size: 3.5rem;
+    color: white;
+    margin: 1rem 2rem;
+    text-transform: capitalize;
+
+    &--title {
+      font-size: 3.5rem;
+      color: white;
+      margin: 1rem 2rem 0 2rem;
+      text-transform: capitalize;
+      font-weight: 700;
+    }
+  }
+}
+
 .skillsbox {
   display: grid;
   grid-template-rows: min-content min-content;

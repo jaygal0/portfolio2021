@@ -7,6 +7,7 @@ imageZoom()
 
 // Import functions from functions.js
 import {
+  aboutAgeSeconds,
   transition,
   enterDetail,
   onceLoad,
@@ -68,6 +69,7 @@ barba.init({
         hero()
         wideCards()
         singleCards()
+        aboutAgeSeconds()
       },
     },
     {
@@ -151,6 +153,7 @@ barba.init({
         hero()
         wideCards()
         singleCards()
+        aboutAgeSeconds()
       },
     },
     {

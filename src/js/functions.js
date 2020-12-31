@@ -201,3 +201,32 @@ export function filterBtns() {
     })
   })
 }
+
+// To calculate my age in seconds on the about page
+import moment from 'moment'
+export function aboutAgeSeconds() {
+  const about = document.getElementById('about')
+  if (about) {
+    const ageYears = document.getElementById('ageYears')
+    const ageDays = document.getElementById('ageDays')
+    const ageSeconds = document.getElementById('ageSeconds')
+    let years = moment().diff('1989-07-30', 'years')
+    let days = moment().diff('1989-07-30', 'days')
+    let seconds = moment().diff('1989-07-30', 'seconds')
+    ageYears.innerText = `In years - ${years}`
+    ageDays.innerText = `In days - ${days}`
+
+    function updateSeconds() {
+      ageSeconds.innerText = `In seconds - ${seconds}`
+    }
+    updateSeconds()
+
+    function ageInSeconds() {
+      setInterval(() => {
+        aboutAgeSeconds()
+      }, 1000)
+    }
+    ageInSeconds()
+  }
+}
+aboutAgeSeconds()

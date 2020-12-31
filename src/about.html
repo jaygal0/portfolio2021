@@ -26,7 +26,12 @@
     <div class="transition">
       <div class="transition__box"><img src="./img/logo.svg" alt="" /></div>
     </div>
-    <div data-barba="container" data-barba-namespace="about" class="container">
+    <div
+      data-barba="container"
+      data-barba-namespace="about"
+      class="container"
+      id="about"
+    >
       <header>
         <nav class="nav">
           <a href="./index.html"
@@ -461,10 +466,8 @@
           </div>
 
           <div class="hero__titles">
-            <h3 id="subtitle" class="hero__titles--h3">joshua galinato</h3>
-            <h1 id="title" class="hero__titles--h1">
-              this should be animating
-            </h1>
+            <h3 id="subtitle" class="hero__titles--h3">about</h3>
+            <h1 id="title" class="hero__titles--h1">get to know me better</h1>
           </div>
         </section>
 
@@ -479,28 +482,72 @@
           </li>
         </ul>
 
-        <section class="aboutcards cards">
-          <div class="aboutcards__first wideCardTextOnly wideCard">
+        <section class="aboutCards cards">
+          <div class="aboutCards__blue wideCardTextOnly wideCard">
             <div class="wideCardTextOnly--textbox">
-              <h4 class="wideCardTextOnly--h4">Lorem ipsum.</h4>
-              <h2 class="wideCardTextOnly--h2">title</h2>
+              <h4 class="wideCardTextOnly--h4">joshua galinato</h4>
+              <h2 class="wideCardTextOnly--h2">a little bio</h2>
               <p class="wideCardTextOnly--paragraph">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui
-                veniam corporis iusto doloremque, dicta eum hic accusamus
-                voluptatibus iste unde cum accusantium et voluptas, in placeat
-                assumenda optio facere! Officia minima vero rem molestiae esse
-                dicta quod quae nemo quisquam.
+                Hey! Thanks for checking out my site and I hope you like what
+                you see. Since you're here, you probably would like to know a
+                little more about me. I'll try my best to not make this page
+                sound too narcissitic as possible!
+              </p>
+              <p>
+                From my age, all the way down to my qualifications. You'll be
+                able to find all the information you'll need.
+              </p>
+              <p>
+                Can't find what you're looking for? Get in
+                <a class="text__link" target="_blank" href="">touch</a> and I'll
+                try to answer all your questions as much as I can.
               </p>
             </div>
           </div>
-          <div class="aboutcards__second singleCardHeader singleCard">
-            <h2 class="singleCardHeader--h2">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. In ut
-              illo quisquam nostrum totam! Eos!
-            </h2>
+          <div class="aboutCards__green singleCardInfo singleCard">
+            <p class="singleCardInfo__text--title">name:</p>
+            <p class="singleCardInfo__text">joshua galinato</p>
+            <p class="singleCardInfo__text--title">age:</p>
+            <p class="singleCardInfo__text" id="ageYears"></p>
+            <p class="singleCardInfo__text" id="ageDays"></p>
+            <p class="singleCardInfo__text" id="ageSeconds"></p>
           </div>
-          <div class="aboutcards__third singleCard"></div>
-          <div class="aboutcards__fourth wideCard"></div>
+          <div class="aboutCards__green singleCardInfo singleCard">
+            <p class="singleCardInfo__text--title">ancestry:</p>
+            <p class="singleCardInfo__text">🇵🇭 filipino</p>
+            <p class="singleCardInfo__text--title">nationality:</p>
+            <p class="singleCardInfo__text">🇬🇧 british</p>
+            <p class="singleCardInfo__text--title">current residency:</p>
+            <p class="singleCardInfo__text">🇸🇪 sweden</p>
+          </div>
+
+          <div class="aboutCards__green singleCardInfo singleCard">
+            <p class="singleCardInfo__text--title">qualifications:</p>
+            <p class="singleCardInfo__text">
+              BA Hons Graphic &amp; Media Design
+            </p>
+            <p class="singleCardInfo__text--title">University:</p>
+            <p class="singleCardInfo__text">
+              <a
+                target="_blank"
+                class="text__link"
+                href="https://www.arts.ac.uk/"
+              >
+                University of the Arts London (UAL)
+              </a>
+            </p>
+            <img
+              class="aboutCards__logo"
+              src="https://www.tautdanning.no/wp-content/uploads/2017/01/UAL_international_logo_black_aw_2362x954.jpg"
+              alt=""
+            />
+          </div>
+          <div class="aboutCards__green singleCardInfo singleCard">
+            <p class="singleCardInfo__text--title">name:</p>
+            <p class="singleCardInfo__text">joshua galinato</p>
+            <p class="singleCardInfo__text--title">age:</p>
+            <p class="singleCardInfo__text">31</p>
+          </div>
         </section>
       </main>
 
@@ -525,7 +572,10 @@
           </ul>
         </div>
         <div class="footer__copyright">
-          <p class="footer__copyright--text">site made with ❤️</p>
+          <p class="footer__copyright--text">
+            ️designed &amp; coded by
+            <a class="text__link" href="./about.html">me</a>
+          </p>
           <p class="footer__copyright--text">joshua galinato &#169; 2020</p>
         </div>
       </footer>

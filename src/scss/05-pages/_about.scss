@@ -27,25 +27,19 @@
   }
 }
 
-.aboutcards {
+.aboutCards {
   grid-column: 3 / 7;
   margin-top: 8rem;
 
-  &__first {
+  &__blue {
     background: $blue;
   }
 
-  &__second {
+  &__green {
     background: $green;
   }
-
-  &__third {
-    background-image: url('/img/card.jpg');
-    @include backgroundImage;
-  }
-
-  &__fourth {
-    background-image: url('/img/card.jpg');
-    @include backgroundImage;
+  &__logo {
+    width: 90%;
+    margin: 2rem auto;
   }
 }

@@ -44,3 +44,12 @@
     }
   }
 }
+
+.text__link {
+  text-decoration: underline;
+  color: white;
+
+  &:hover {
+    color: $grey;
+  }
+}
