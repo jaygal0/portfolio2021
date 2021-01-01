@@ -23,6 +23,10 @@
   }
 }
 
+.ten {
+  @include skillsLevelBefore;
+  width: 10%;
+}
 .five {
   @include skillsLevelBefore;
   width: 50%;

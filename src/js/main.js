@@ -7,7 +7,8 @@ imageZoom()
 
 // Import functions from functions.js
 import {
-  // aboutAgeSeconds,
+  age,
+  footerYear,
   transition,
   enterDetail,
   onceLoad,
@@ -56,6 +57,7 @@ barba.init({
         homeHero()
         wideCards()
         singleCards()
+        footerYear()
       },
     },
     {
@@ -69,7 +71,8 @@ barba.init({
         hero()
         wideCards()
         singleCards()
-        // aboutAgeSeconds()
+        age()
+        footerYear()
       },
     },
     {
@@ -83,6 +86,7 @@ barba.init({
         hero()
         filterBtns()
         singleCards()
+        footerYear()
       },
     },
     {
@@ -96,6 +100,7 @@ barba.init({
         hero()
         skillCards()
         filterBtns()
+        footerYear()
       },
     },
     {
@@ -130,6 +135,7 @@ barba.init({
         homeHero()
         wideCards()
         singleCards()
+        footerYear()
       },
     },
     {
@@ -153,7 +159,8 @@ barba.init({
         hero()
         wideCards()
         singleCards()
-        // aboutAgeSeconds()
+        age()
+        footerYear()
       },
     },
     {
@@ -177,6 +184,7 @@ barba.init({
         hero()
         filterBtns()
         singleCards()
+        footerYear()
       },
     },
     {
@@ -200,6 +208,7 @@ barba.init({
         hero()
         skillCards()
         filterBtns()
+        footerYear()
       },
     },
     {

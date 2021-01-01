@@ -202,31 +202,27 @@ export function filterBtns() {
   })
 }
 
-// To calculate my age in seconds on the about page
+// To calculate my age on the about page
 import moment from 'moment'
-export function aboutAgeSeconds() {
+export function age() {
   const about = document.getElementById('about')
   if (about) {
     const ageYears = document.getElementById('ageYears')
-    const ageDays = document.getElementById('ageDays')
-    const ageSeconds = document.getElementById('ageSeconds')
-    let years = moment().diff('1989-07-30', 'years')
-    let days = moment().diff('1989-07-30', 'days')
-    let seconds = moment().diff('1989-07-30', 'seconds')
-    ageYears.innerText = `In years - ${years}`
-    ageDays.innerText = `In days - ${days}`
+    const yearsOld = moment().diff([1989, 6, 30], 'years')
+    const currentYear = moment().year()
+    const beforeCurrentYear = moment([currentYear - 1, 6, 30])
+    const today = moment()
+    const days = today.diff(beforeCurrentYear, 'days')
 
-    function updateSeconds() {
-      ageSeconds.innerText = `In seconds - ${seconds}`
-    }
-    updateSeconds()
-
-    function ageInSeconds() {
-      setInterval(() => {
-        aboutAgeSeconds()
-      }, 1000)
-    }
-    ageInSeconds()
+    ageYears.innerHTML = `${yearsOld} years &amp; ${days} days old`
   }
 }
-aboutAgeSeconds()
+age()
+
+export function footerYear() {
+  const year = document.getElementById('footerYear')
+  if (year) {
+    const currentYear = moment().year()
+    year.innerText = currentYear
+  }
+}

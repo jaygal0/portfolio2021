@@ -40,6 +40,12 @@
   }
   &__logo {
     width: 90%;
-    margin: 2rem auto;
+    margin: 1rem auto;
+  }
+
+  &__languages {
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    width: 90% !important;
   }
 }
