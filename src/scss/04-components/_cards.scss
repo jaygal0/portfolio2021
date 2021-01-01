@@ -104,6 +104,13 @@
     color: white;
     margin: 1rem 2rem;
     text-transform: capitalize;
+    position: relative;
+
+    &--small {
+      font-size: 2.7rem;
+      margin: 1rem 2rem;
+      text-transform: capitalize;
+    }
 
     &--title {
       font-size: 3.5rem;
@@ -111,6 +118,17 @@
       margin: 1rem 2rem 0 2rem;
       text-transform: capitalize;
       font-weight: 700;
+    }
+
+    &--heading {
+      position: absolute;
+      top: 2rem;
+      font-size: 3.5rem;
+      color: white;
+      margin: 1rem 2rem 0 2rem;
+      text-transform: capitalize;
+      font-weight: 700;
+      z-index: 1;
     }
   }
 }
