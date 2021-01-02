@@ -2,22 +2,6 @@
   grid-column: 3 / 7;
   margin-top: 2rem;
 
-  &__info {
-    background: $green;
-  }
-
-  &__skills {
-    background: $blue;
-  }
-
-  &__header {
-    background: $green;
-  }
-
-  &__branding {
-    background: $green;
-  }
-
   &__palette {
     &--1 {
       background: #fffbeb;
@@ -38,6 +22,7 @@
       background: #1e1c1c;
     }
   }
+
   &__image {
     display: flex;
     align-self: center;

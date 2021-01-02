@@ -1,16 +1,4 @@
 .galiwayCards {
   grid-column: 3 / 7;
   margin-top: 2rem;
-
-  &__info {
-    background: $green;
-  }
-
-  &__skills {
-    background: $blue;
-  }
-
-  &__header {
-    background: $green;
-  }
 }

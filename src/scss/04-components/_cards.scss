@@ -75,6 +75,16 @@
     @include cardTextBottom;
     @include noWhiteBackgroundText;
   }
+
+  &--red {
+    background: $red;
+  }
+  &--green {
+    background: $green;
+  }
+  &--blue {
+    background: $blue;
+  }
 }
 
 .singleCardHeader {
