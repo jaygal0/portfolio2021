@@ -26,6 +26,8 @@ import {
   skillsHero,
 } from './heroAnimation.js'
 
+import { photoLightbox } from './photoLightbox.js'
+
 import { borderColors } from './borderColors.js'
 
 import { videoLightbox } from './videoLightbox.js'
@@ -73,6 +75,7 @@ barba.init({
         singleCards()
         age()
         footerYear()
+        photoLightbox()
       },
     },
     {
@@ -112,6 +115,7 @@ barba.init({
         onceLoad()
         borderColors()
         videoLightbox()
+        photoLightbox()
       },
     },
     {
@@ -161,6 +165,7 @@ barba.init({
         singleCards()
         age()
         footerYear()
+        photoLightbox()
       },
     },
     {
@@ -228,6 +233,7 @@ barba.init({
         enterDetail()
         borderColors()
         videoLightbox()
+        photoLightbox()
       },
     },
     {
@@ -246,6 +252,7 @@ barba.init({
       async enter(data) {
         borderColors()
         videoLightbox()
+        photoLightbox()
       },
     },
   ],

@@ -1,3 +1,2 @@
-TODO Update Favicon icon
-TODO Sort out image-zoom
+TODO Sort out images
 TODO Figure out loading/preloaders ?
