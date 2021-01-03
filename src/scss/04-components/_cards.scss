@@ -27,6 +27,11 @@
       text-align: center;
       font-weight: bold;
       line-height: 9rem;
+
+      @include media(phoneLand) {
+        width: 14rem;
+        height: 14rem;
+      }
     }
   }
 
@@ -42,6 +47,10 @@
       display: flex;
       width: 90%;
       margin: 0 auto;
+
+      @include media(tabPort) {
+        width: 70%;
+      }
     }
   }
 
@@ -71,9 +80,14 @@
     opacity: 0;
     transform: translatey(10%);
     transition: all ease-in 0.8s;
-    // text-shadow: 2px 2px 3px gray;
     @include cardTextBottom;
     @include noWhiteBackgroundText;
+
+    @include media(tabLand) {
+      opacity: 1;
+      transform: translateY(0);
+      transition: all ease-out 0.7s;
+    }
   }
 
   &--red {
@@ -236,13 +250,10 @@
   }
 
   &--text {
-    // @include cardTextBottom;
-    // @include whiteBackgroundText;
     color: white;
     opacity: 0;
     transform: translatey(10%);
     transition: all ease-in 0.8s;
-    // text-shadow: 2px 2px 3px gray;
     @include cardTextBottom;
     @include noWhiteBackgroundText;
   }
@@ -275,6 +286,12 @@
     display: flex;
     justify-content: space-around;
     height: 18rem;
+
+    @include media(phoneLand) {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 7rem;
+    }
   }
 
   &--apps {

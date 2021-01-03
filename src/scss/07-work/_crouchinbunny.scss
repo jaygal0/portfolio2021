@@ -1,5 +1,5 @@
 .crouchinbunnyCards {
-  grid-column: 3 / 7;
+  @include centerColumn;
   margin-top: 2rem;
 
   &--panels {
@@ -10,9 +10,11 @@
   &--gif1 {
     background-image: url('/img/crouchinStart.gif');
     background-size: cover;
+    background-position: center;
   }
   &--gif2 {
     background-image: url('/img/crouchinEnd.gif');
     background-size: cover;
+    background-position: center;
   }
 }

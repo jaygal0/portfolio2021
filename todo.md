@@ -1,3 +1,3 @@
-TODO Sort out media queries
 TODO Update Favicon icon
+TODO Sort out image-zoom
 TODO Figure out loading/preloaders ?

@@ -1,8 +1,12 @@
 .reloadCards {
-  grid-column: 3 / 7;
+  @include centerColumn;
   margin-top: 2rem;
 
   &--deck {
     width: 70%;
+
+    @include media(tabPort) {
+      width: 80%;
+    }
   }
 }

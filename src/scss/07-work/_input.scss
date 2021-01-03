@@ -1,5 +1,5 @@
 .inputCards {
-  grid-column: 3 / 7;
+  @include centerColumn;
   margin-top: 2rem;
 
   &__palette {
@@ -28,5 +28,9 @@
     align-self: center;
     width: 70%;
     margin: 0 auto;
+
+    @include media(tabPort) {
+      width: 95%;
+    }
   }
 }

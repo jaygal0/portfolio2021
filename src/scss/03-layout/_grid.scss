@@ -3,8 +3,16 @@
   grid-template-columns: minmax(150px, 1fr) repeat(6, 1fr) minmax(150px, 1fr);
   grid-template-rows: min-content 40vh;
 
-  @include media(tabPort) {
+  @include media(tabLand) {
     grid-template-columns: minmax(10px, 1fr) repeat(6, 1fr) minmax(10px, 1fr);
+  }
+
+  @include media(phoneLand) {
+    grid-template-columns: minmax(10px, 20px) repeat(6, 1fr) minmax(10px, 20px);
+  }
+
+  @include media(phonePort) {
+    grid-template-columns: minmax(5px, 10px) repeat(6, 1fr) minmax(5px, 10px);
   }
 }
 
@@ -17,7 +25,11 @@
   grid-template-columns: minmax(150px, 1fr) repeat(6, 1fr) minmax(150px, 1fr);
   grid-template-rows: min-content;
 
-  @include media(tabPort) {
+  @include media(tabLand) {
     grid-template-columns: minmax(10px, 1fr) repeat(6, 1fr) minmax(10px, 1fr);
+  }
+
+  @include media(phoneLand) {
+    grid-template-columns: minmax(10px, 20px) repeat(6, 1fr) minmax(10px, 20px);
   }
 }

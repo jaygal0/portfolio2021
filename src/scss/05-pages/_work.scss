@@ -5,8 +5,11 @@
   grid-template-columns: minmax(150px, 1fr) repeat(6, 1fr) minmax(150px, 1fr);
   background: $grey;
 
-  @include media(tabPort) {
-    grid-template-columns: minmax(100px, 1fr) repeat(6, 1fr) minmax(100px, 1fr);
+  @include media(tabLand) {
+    grid-template-columns: minmax(10px, 30px) repeat(6, 1fr) minmax(10px, 30px);
+  }
+  @include media(phoneLand) {
+    grid-template-columns: minmax(10px, 20px) repeat(6, 1fr) minmax(10px, 20px);
   }
 }
 

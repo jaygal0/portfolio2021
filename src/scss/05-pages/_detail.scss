@@ -5,8 +5,8 @@
   grid-template-columns: minmax(150px, 1fr) repeat(6, 1fr) minmax(150px, 1fr);
   background: $grey;
 
-  @include media(tabPort) {
-    grid-template-columns: minmax(100px, 1fr) repeat(6, 1fr) minmax(100px, 1fr);
+  @include media(tabLand) {
+    grid-template-columns: minmax(5px, 10px) repeat(6, 1fr) minmax(5px, 10px);
   }
 }
 

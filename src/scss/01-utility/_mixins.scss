@@ -28,6 +28,10 @@
 
 @mixin centerColumn {
   grid-column: 3 / 7;
+
+  @include media(phonePort) {
+    grid-column: 2 / 8;
+  }
 }
 
 @mixin imageZoom {
@@ -105,7 +109,7 @@
 // $tabLand			1200px / 75em
 // $tabPort			850px  / 54em
 // $phoneLand		667px	 / 42em
-// $phonePort		580px  / 37em
+// $phonePort		414px  / 26em
 
 @mixin media($breakPoint) {
   @if $breakPoint == tabLand {
@@ -125,7 +129,7 @@
   }
 
   @if $breakPoint == phonePort {
-    @media (max-width: 37em) {
+    @media (max-width: 26em) {
       @content;
     }
   }

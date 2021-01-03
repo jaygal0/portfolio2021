@@ -1,4 +1,4 @@
 .kawaiiCards {
-  grid-column: 3 / 7;
+  @include centerColumn;
   margin-top: 2rem;
 }

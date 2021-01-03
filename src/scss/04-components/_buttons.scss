@@ -13,6 +13,10 @@
     background: none;
     outline: none;
 
+    @include media(tabLand) {
+      padding: 1rem 3rem;
+      margin: 1rem;
+    }
     @include media(tabPort) {
       padding: 1rem 2rem;
       margin: 1rem;
@@ -25,7 +29,7 @@
     }
   }
 
-  @include media(tabPort) {
+  @include media(tabLand) {
     flex-wrap: wrap;
   }
 }

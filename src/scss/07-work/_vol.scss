@@ -1,13 +1,21 @@
 .volCards {
-  grid-column: 3 / 7;
+  @include centerColumn;
   margin-top: 2rem;
 
   &--quiz {
     width: 70%;
+
+    @include media(tabPort) {
+      width: 55%;
+    }
   }
 
   &--deck {
     width: 65%;
+
+    @include media(tabPort) {
+      width: 80%;
+    }
   }
 
   &__gifBackground {

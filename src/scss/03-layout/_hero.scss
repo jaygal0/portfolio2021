@@ -9,6 +9,16 @@
 
   @include media(tabPort) {
     grid-template-columns: minmax(100px, 1fr) repeat(6, 1fr) minmax(100px, 1fr);
+
+    @include media(phoneLand) {
+      grid-template-columns: minmax(10px, 20px) repeat(6, 1fr) minmax(
+          10px,
+          20px
+        );
+    }
+    @include media(phonePort) {
+      grid-template-columns: minmax(5px, 10px) repeat(6, 1fr) minmax(5px, 10px);
+    }
   }
 
   &__illustration {
@@ -16,7 +26,7 @@
   }
 
   &__titles {
-    grid-column: 3 / 7;
+    @include centerColumn;
     position: absolute;
     bottom: 15rem;
     color: $title;
@@ -27,6 +37,10 @@
           1fr
         );
       bottom: 5rem;
+    }
+
+    @include media(phonePort) {
+      display: none;
     }
 
     &--h3 {

@@ -8,6 +8,13 @@ footer {
   @include media(tabPort) {
     grid-template-columns: minmax(100px, 1fr) repeat(6, 1fr) minmax(100px, 1fr);
   }
+  @include media(phoneLand) {
+    grid-template-columns: minmax(10px, 20px) repeat(6, 1fr) minmax(10px, 20px);
+  }
+
+  @include media(phonePort) {
+    grid-template-columns: minmax(5px, 10px) repeat(6, 1fr) minmax(5px, 10px);
+  }
 }
 
 .footer {
@@ -20,6 +27,9 @@ footer {
     padding: 5px;
     margin: 0 auto;
     cursor: pointer;
+
+    @include media(phoneLand) {
+    }
   }
 
   &__nav {
