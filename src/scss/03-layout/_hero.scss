@@ -7,15 +7,27 @@
   overflow: hidden;
   @include backgroundImage;
 
+  @include media(tabPort) {
+    grid-template-columns: minmax(100px, 1fr) repeat(6, 1fr) minmax(100px, 1fr);
+  }
+
   &__illustration {
     width: 100vw;
   }
 
   &__titles {
-    grid-column: 3;
+    grid-column: 3 / 7;
     position: absolute;
     bottom: 15rem;
     color: $title;
+
+    @include media(tabPort) {
+      grid-template-columns: minmax(100px, 1fr) repeat(6, 1fr) minmax(
+          100px,
+          1fr
+        );
+      bottom: 5rem;
+    }
 
     &--h3 {
       opacity: 0.5;

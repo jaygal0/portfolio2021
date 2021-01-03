@@ -2,6 +2,10 @@
   display: grid;
   grid-template-columns: minmax(150px, 1fr) repeat(6, 1fr) minmax(150px, 1fr);
   grid-template-rows: min-content 40vh;
+
+  @include media(tabPort) {
+    grid-template-columns: minmax(10px, 1fr) repeat(6, 1fr) minmax(10px, 1fr);
+  }
 }
 
 .wrapper {
@@ -12,4 +16,8 @@
   display: grid;
   grid-template-columns: minmax(150px, 1fr) repeat(6, 1fr) minmax(150px, 1fr);
   grid-template-rows: min-content;
+
+  @include media(tabPort) {
+    grid-template-columns: minmax(10px, 1fr) repeat(6, 1fr) minmax(10px, 1fr);
+  }
 }

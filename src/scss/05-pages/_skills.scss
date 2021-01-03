@@ -4,6 +4,10 @@
   display: grid;
   grid-template-columns: minmax(150px, 1fr) repeat(6, 1fr) minmax(150px, 1fr);
   background: $grey;
+
+  @include media(tabPort) {
+    grid-template-columns: minmax(100px, 1fr) repeat(6, 1fr) minmax(100px, 1fr);
+  }
 }
 
 .skillscards {

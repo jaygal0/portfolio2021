@@ -4,6 +4,10 @@ footer {
   grid-row: 2;
   grid-template-columns: minmax(150px, 1fr) repeat(6, 1fr) minmax(150px, 1fr);
   background: $black;
+
+  @include media(tabPort) {
+    grid-template-columns: minmax(100px, 1fr) repeat(6, 1fr) minmax(100px, 1fr);
+  }
 }
 
 .footer {

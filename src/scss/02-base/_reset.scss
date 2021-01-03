@@ -10,6 +10,16 @@ html {
   // This defines what 1rem is
   font-size: 62.5%;
   scroll-behavior: smooth;
+
+  @include media(tabLand) {
+    font-size: 56%;
+  }
+  @include media(tabPort) {
+    font-size: 50%;
+  }
+  @include media(phonePort) {
+    font-size: 43%;
+  }
 }
 
 body {
