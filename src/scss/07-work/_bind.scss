@@ -2,6 +2,12 @@
   @include centerColumn;
   margin-top: 2rem;
 
+  &__prototype {
+    background-image: url('../img/bindPrototype.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   &__palette {
     &--1 {
       background: #fffbeb;

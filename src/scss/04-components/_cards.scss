@@ -282,6 +282,11 @@
   &--textbox {
     @include cardTextTop;
     color: white;
+
+    &--alt {
+      @include cardTextTop;
+      color: $black;
+    }
   }
 
   &--h4 {

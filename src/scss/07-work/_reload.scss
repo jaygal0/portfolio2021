@@ -1,12 +1,4 @@
 .reloadCards {
   @include centerColumn;
   margin-top: 2rem;
-
-  &--deck {
-    width: 70%;
-
-    @include media(tabPort) {
-      width: 80%;
-    }
-  }
 }
