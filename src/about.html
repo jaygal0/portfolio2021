@@ -35,15 +35,14 @@
     >
       <header>
         <nav class="nav">
-          <a href="./index.html"
+          <a href="./index.html" class="nav__logo--link"
             ><img src="./img/logo.svg" alt="" id="logo" class="nav__logo"
           /></a>
-          <div class="nav__navbar">
+          <div class="nav__navbar nav__navbar--toggle">
+            <div class="nav__close" id="navClose">x</div>
             <ul class="nav__unordered">
               <li class="nav__listitems">
-                <a class="nav__link nav__link--active" href="./about.html"
-                  >about</a
-                >
+                <a class="nav__link" href="./about.html">about</a>
               </li>
               <li class="nav__listitems">
                 <a class="nav__link" href="./work.html">work</a>
@@ -59,6 +58,12 @@
             </ul>
           </div>
         </nav>
+        <img
+          class="hamburger"
+          id="hamburger"
+          src="./img/hamburger.svg"
+          alt=""
+        />
       </header>
       <main class="main__about">
         <section class="hero">
@@ -604,9 +609,7 @@
               <a class="footer__link" href="./skills.html">skills</a>
             </li>
             <li class="footer__listitems">
-              <a class="footer__link" href="mailto:hi@joshuagalinato.com"
-                >contact</a
-              >
+              <a class="footer__link" href="">contact</a>
             </li>
           </ul>
         </div>

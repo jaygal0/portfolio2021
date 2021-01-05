@@ -12,6 +12,7 @@ import {
   singleCards,
   skillCards,
   filterBtns,
+  hamburger,
 } from './functions.js'
 
 import {
@@ -56,6 +57,7 @@ barba.init({
         wideCards()
         singleCards()
         footerYear()
+        hamburger()
       },
     },
     {
@@ -72,6 +74,7 @@ barba.init({
         age()
         footerYear()
         photoLightbox()
+        hamburger()
       },
     },
     {
@@ -100,6 +103,7 @@ barba.init({
         skillCards()
         filterBtns()
         footerYear()
+        hamburger()
       },
     },
     {
@@ -136,6 +140,7 @@ barba.init({
         wideCards()
         singleCards()
         footerYear()
+        hamburger()
       },
     },
     {
@@ -162,6 +167,7 @@ barba.init({
         age()
         footerYear()
         photoLightbox()
+        hamburger()
       },
     },
     {
@@ -186,6 +192,7 @@ barba.init({
         filterBtns()
         singleCards()
         footerYear()
+        hamburger()
       },
     },
     {
@@ -210,6 +217,7 @@ barba.init({
         skillCards()
         filterBtns()
         footerYear()
+        hamburger()
       },
     },
     {

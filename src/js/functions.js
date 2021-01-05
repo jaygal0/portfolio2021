@@ -226,3 +226,16 @@ export function footerYear() {
     year.innerText = currentYear
   }
 }
+
+export function hamburger() {
+  const hamburger = document.getElementById('hamburger')
+  const nav = document.querySelector('.nav__navbar')
+  const navClose = document.getElementById('navClose')
+
+  hamburger.addEventListener('click', () => {
+    nav.classList.toggle('nav__navbar--toggle')
+  })
+  navClose.addEventListener('click', () => {
+    nav.classList.toggle('nav__navbar--toggle')
+  })
+}

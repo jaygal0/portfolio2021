@@ -29,10 +29,11 @@
     <div data-barba="container" data-barba-namespace="home" class="container">
       <header>
         <nav class="nav">
-          <a href="./index.html"
+          <a href="./index.html" class="nav__logo--link"
             ><img src="./img/logo.svg" alt="" id="logo" class="nav__logo"
           /></a>
-          <div class="nav__navbar">
+          <div class="nav__navbar nav__navbar--toggle">
+            <div class="nav__close" id="navClose">x</div>
             <ul class="nav__unordered">
               <li class="nav__listitems">
                 <a class="nav__link" href="./about.html">about</a>
@@ -51,6 +52,12 @@
             </ul>
           </div>
         </nav>
+        <img
+          class="hamburger"
+          id="hamburger"
+          src="./img/hamburger.svg"
+          alt=""
+        />
       </header>
       <main class="main__home">
         <section class="hero">

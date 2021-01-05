@@ -38,40 +38,35 @@
     >
       <header>
         <nav class="nav">
-          <a data-filter="" href="./index.html"
+          <a href="./index.html" class="nav__logo--link"
             ><img src="./img/logo.svg" alt="" id="logo" class="nav__logo"
           /></a>
-          <div class="nav__navbar">
+          <div class="nav__navbar nav__navbar--toggle">
+            <div class="nav__close" id="navClose">x</div>
             <ul class="nav__unordered">
               <li class="nav__listitems">
-                <a data-filter="" class="nav__link" href="./about.html"
-                  >about</a
-                >
+                <a class="nav__link" href="./about.html">about</a>
               </li>
               <li class="nav__listitems">
-                <a
-                  data-filter=""
-                  class="nav__link nav__link--active"
-                  href="./work.html"
-                  >work</a
-                >
+                <a class="nav__link" href="./work.html">work</a>
               </li>
               <li class="nav__listitems">
-                <a data-filter="" class="nav__link" href="./skills.html"
-                  >skills</a
-                >
+                <a class="nav__link" href="./skills.html">skills</a>
               </li>
               <li class="nav__listitems">
-                <a
-                  data-filter=""
-                  class="nav__link"
-                  href="mailto:hi@joshuagalinato.com"
+                <a class="nav__link" href="mailto:hi@joshuagalinato.com"
                   >contact</a
                 >
               </li>
             </ul>
           </div>
         </nav>
+        <img
+          class="hamburger"
+          id="hamburger"
+          src="./img/hamburger.svg"
+          alt=""
+        />
       </header>
       <main data-barba-namespace="work" class="main__work">
         <section class="hero">
