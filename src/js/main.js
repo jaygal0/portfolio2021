@@ -1,10 +1,6 @@
 // Import barba from modules
 import barba, { HookMethods } from '@barba/core'
 
-// NOT SURE IF THIS IS WORKING OR NOT
-// import imageZoom from 'image-zoom'
-// imageZoom()
-
 // Import functions from functions.js
 import {
   age,

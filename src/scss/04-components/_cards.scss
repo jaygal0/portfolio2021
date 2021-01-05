@@ -4,6 +4,10 @@
   flex-wrap: wrap;
 }
 
+.imageHover {
+  cursor: pointer;
+}
+
 .singleCard {
   @include singleCardDimensions;
   color: white;
@@ -42,6 +46,10 @@
     align-items: center;
     background: $green;
     position: relative;
+
+    &:hover {
+      cursor: pointer;
+    }
 
     &--img {
       display: flex;
@@ -235,6 +243,10 @@
     align-items: center;
     background: $green;
 
+    &:hover {
+      cursor: pointer;
+    }
+
     &--img {
       object-fit: cover;
       display: flex;
@@ -316,13 +328,4 @@
       text-decoration: underline;
     }
   }
-}
-
-.endCard {
-  @include marginBottom;
-}
-
-// To allow the image zoom fill the screen
-.image-zoom-zoomed {
-  border-radius: 0;
 }
