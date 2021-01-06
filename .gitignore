@@ -6,4 +6,3 @@ package-lock.json
 .DS_Store
 .vscode
 src/img/*
-.babelrc
