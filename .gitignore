@@ -5,4 +5,5 @@ pr/
 package-lock.json
 .DS_Store
 .vscode
-src/img/
+src/img/*
+.babelrc
