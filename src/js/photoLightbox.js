@@ -53,25 +53,25 @@ export function photoLightbox() {
     panel1.addEventListener('click', () => {
       BigPicture({
         el: panel1,
-        imgSrc: '../img/crouchinPanels1.png',
+        imgSrc: '../img/crouchin-bunny-emotes-1.png',
       })
     })
     panel2.addEventListener('click', () => {
       BigPicture({
         el: panel2,
-        imgSrc: '../img/crouchinPanels2.png',
+        imgSrc: '../img/crouchin-bunny-emotes-2.png',
       })
     })
     panel3.addEventListener('click', () => {
       BigPicture({
         el: panel3,
-        imgSrc: '../img/crouchinPanels3.png',
+        imgSrc: '../img/crouchin-bunny-emotes-3.png',
       })
     })
     offline.addEventListener('click', () => {
       BigPicture({
         el: offline,
-        imgSrc: '../img/crouchinOffline.jpg',
+        imgSrc: '../img/crouchinbunny-offline.png',
       })
     })
   }
