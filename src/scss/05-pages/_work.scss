@@ -70,6 +70,15 @@
       @include cardHover;
     }
   }
+  &__tmi {
+    background-image: url('/img/tmi-banner.png');
+    @include backgroundImage;
+    @include transition;
+
+    &:hover {
+      @include cardHover;
+    }
+  }
   &__photography {
     background-image: url('/img/photosEbony.jpg');
     color: $black;

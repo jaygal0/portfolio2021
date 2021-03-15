@@ -9,6 +9,7 @@ export function photoLightbox() {
   const kawaiicornershop = document.getElementById('kawaii')
   const photography = document.getElementById('photography')
   const reload = document.getElementById('reload')
+  const tmi = document.getElementById('tmi')
   const vol = document.getElementById('vol')
 
   if (about) {
@@ -365,6 +366,17 @@ export function photoLightbox() {
       BigPicture({
         el: ebook6,
         imgSrc: '../img/reloadBook6.jpg',
+      })
+    })
+  }
+  if (tmi) {
+    console.log('hello world')
+    const tmiBanner = document.getElementById('tmiBanner')
+
+    tmiBanner.addEventListener('click', () => {
+      BigPicture({
+        el: tmiBanner,
+        imgSrc: '../img/tmi-banner-main.png',
       })
     })
   }
